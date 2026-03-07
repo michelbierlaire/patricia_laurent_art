@@ -1,5 +1,35 @@
 [
   {
+    "id": "jeune-fille",
+    "title": {
+      "fr": "Au delà du regard",
+      "en": "Beyond the Eyes"
+    },
+    "description": {
+      "fr": "Acrylique sur papier",
+      "en": "Acrylic on paper"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/jeune_fille.JPEG"
+    ],
+    "extra": {}
+  },
+  {
     "id": "bouquet",
     "title": {
       "fr": "Bouquet Éphémère",
@@ -87,36 +117,6 @@
     "pictures": [
       "images/chats.jpg",
       "images/chat.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "cuba-libre",
-    "title": {
-      "fr": "Cuba Libre",
-      "en": "Cuba Libre"
-    },
-    "description": {
-      "fr": "",
-      "en": ""
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "",
-    "date": "",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/cuba_libre.jpeg"
     ],
     "extra": {}
   },
@@ -273,14 +273,14 @@
     "extra": {}
   },
   {
-    "id": "jeune-fille",
+    "id": "meduse",
     "title": {
-      "fr": "Jeune Fille",
-      "en": "Young Girl"
+      "fr": "Instinct reptilien",
+      "en": "Reptilian instinct"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Argile auto durcissante et acrylique sur bois",
+      "en": "Air-dry clay and acrylic on wood"
     },
     "type": {
       "fr": "",
@@ -298,7 +298,7 @@
       "en": ""
     },
     "pictures": [
-      "images/jeune_fille.JPEG"
+      "images/meduse.jpeg"
     ],
     "extra": {}
   },
@@ -333,20 +333,20 @@
     "extra": {}
   },
   {
-    "id": "meduse",
+    "id": "cuba-libre",
     "title": {
-      "fr": "La Méduse",
-      "en": "The Jellyfish"
+      "fr": "La femme au cigare",
+      "en": "The Woman with the Cigar"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
+    "dimensions": "50 x 70 cm",
     "date": "",
     "price": "",
     "keywords": {
@@ -358,25 +358,25 @@
       "en": ""
     },
     "pictures": [
-      "images/meduse.jpeg"
+      "images/cuba_libre.jpeg"
     ],
     "extra": {}
   },
   {
     "id": "draqueen",
     "title": {
-      "fr": "La Reine Drag",
-      "en": "The Drag Queen"
+      "fr": "La Queen et le Bunny",
+      "en": "The Queen and the Bunny"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
+    "dimensions": "50 x 70 cm",
     "date": "",
     "price": "",
     "keywords": {
@@ -573,6 +573,36 @@
     "extra": {}
   },
   {
+    "id": "las-vegas",
+    "title": {
+      "fr": "Le jeu de la séduction",
+      "en": "The Seduction Gamble"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/las_vegas.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "lezard",
     "title": {
       "fr": "Le Lézard",
@@ -605,18 +635,18 @@
   {
     "id": "le-pied",
     "title": {
-      "fr": "Le Pied",
-      "en": "The Foot"
+      "fr": "Tout est question d’équilibre",
+      "en": "It’s All About Balance"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Acrylique et relief en résine sur toile",
+      "en": "Acrylic and resin relief on canvas"
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
+    "dimensions": "50 x 70 cm",
     "date": "",
     "price": "",
     "keywords": {
@@ -810,36 +840,6 @@
     "pictures": [
       "images/accouchement.jpeg",
       "images/accouchement_2.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "las-vegas",
-    "title": {
-      "fr": "Nuit à Las Vegas",
-      "en": "Night in Las Vegas"
-    },
-    "description": {
-      "fr": "",
-      "en": ""
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "",
-    "date": "",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/las_vegas.jpeg"
     ],
     "extra": {}
   },

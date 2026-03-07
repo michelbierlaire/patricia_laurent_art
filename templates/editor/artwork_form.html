@@ -79,7 +79,7 @@
       <div class="col-lg-6">
         <div class="border rounded-4 p-3 bg-light">
           <div class="d-flex gap-3 align-items-center">
-            <img class="thumb-mini" src="/{{ picture }}" alt="">
+            <img class="thumb-mini" src="{{ url_for('serve_image', filename=picture|replace('images/', '', 1)) }}" alt="">
             <div class="flex-grow-1">
               <label class="form-label">Chemin image</label>
               <input class="form-control" name="pictures" value="{{ picture }}">
