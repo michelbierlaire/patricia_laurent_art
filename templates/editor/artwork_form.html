@@ -96,27 +96,27 @@
     {% endfor %}
   </div>
 
-  {% if not is_new %}
-  <div class="editor-card p-4 mt-4 border-0" style="background:#faf7f3;">
-    <h2 class="h5 mb-3">Importer une nouvelle image</h2>
-    <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_image', artwork_id=artwork.id) }}">
-      <div class="row g-3 align-items-end">
-        <div class="col-lg-8">
-          <label class="form-label">Fichier image</label>
-          <input class="form-control" type="file" name="image_file" accept="image/*">
-          <div class="form-text">Si le nom de fichier existe déjà dans <code>images/</code>, l'import sera refusé.</div>
-        </div>
-        <div class="col-lg-4">
-          <button class="btn btn-outline-primary w-100" type="submit">Importer l'image</button>
-        </div>
-      </div>
-    </form>
-  </div>
-  {% endif %}
-
   <div class="sticky-actions mt-4 d-flex gap-2">
     <button class="btn btn-primary" type="submit">Enregistrer</button>
     <a class="btn btn-outline-secondary" href="{{ url_for('dashboard') }}">Annuler</a>
   </div>
 </form>
+
+{% if not is_new %}
+<div class="editor-card p-4 mt-4 border-0" style="background:#faf7f3;">
+  <h2 class="h5 mb-3">Importer une nouvelle image</h2>
+  <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_image', artwork_id=artwork.id) }}">
+    <div class="row g-3 align-items-end">
+      <div class="col-lg-8">
+        <label class="form-label">Fichier image</label>
+        <input class="form-control" type="file" name="image_file" accept="image/*">
+        <div class="form-text">Si le nom de fichier existe déjà dans <code>images/</code>, l'import sera refusé.</div>
+      </div>
+      <div class="col-lg-4">
+        <button class="btn btn-outline-primary w-100" type="submit">Importer l'image</button>
+      </div>
+    </div>
+  </form>
+</div>
+{% endif %}
 {% endblock %}

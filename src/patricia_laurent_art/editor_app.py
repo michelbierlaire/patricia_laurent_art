@@ -5,7 +5,7 @@ import sys
 import webbrowser
 from pathlib import Path
 
-from flask import Flask, flash, redirect, render_template, request, url_for
+from flask import Flask, flash, redirect, render_template, request, send_from_directory, url_for
 from jinja2 import ChoiceLoader, FileSystemLoader
 
 from .content_manager import ContentManager
@@ -28,6 +28,10 @@ def create_app() -> Flask:
         artworks = manager.get_artworks()
         config = manager.get_site_config()
         return render_template('dashboard.html', artworks=artworks, config=config)
+
+    @app.get('/images/<path:filename>')
+    def serve_image(filename: str):
+        return send_from_directory(IMAGES_DIR, filename)
 
     @app.route('/site-config', methods=['GET', 'POST'])
     def site_config() -> str:
