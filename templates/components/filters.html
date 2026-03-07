@@ -1,0 +1,35 @@
+<section class="filters-panel mb-4">
+  <div class="row g-3 align-items-end">
+    <div class="col-12 col-lg-4">
+      <label for="searchInput" class="form-label">{{ ui.search }}</label>
+      <input id="searchInput" type="search" class="form-control" placeholder="{{ ui.search_placeholder }}">
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="typeFilter" class="form-label">{{ ui.filter_type }}</label>
+      <select id="typeFilter" class="form-select">
+        <option value="">{{ ui.all_types }}</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="yearFilter" class="form-label">{{ ui.filter_year }}</label>
+      <select id="yearFilter" class="form-select">
+        <option value="">{{ ui.all_years }}</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="keywordFilter" class="form-label">{{ ui.filter_keyword }}</label>
+      <select id="keywordFilter" class="form-select">
+        <option value="">{{ ui.all_keywords }}</option>
+      </select>
+    </div>
+    <div class="col-12 col-lg-2">
+      <label for="sortSelect" class="form-label">{{ ui.sort }}</label>
+      <select id="sortSelect" class="form-select">
+        <option value="title-asc">{{ ui.sort_title_asc }}</option>
+        <option value="title-desc">{{ ui.sort_title_desc }}</option>
+        <option value="date-desc">{{ ui.sort_date_desc }}</option>
+        <option value="date-asc">{{ ui.sort_date_asc }}</option>
+      </select>
+    </div>
+  </div>
+</section>

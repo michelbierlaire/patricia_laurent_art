@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg site-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="{{ home_href }}">{{ site_title }}</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="{{ home_href }}">{{ ui.home }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ collection_href }}">{{ ui.collection }}</a></li>
+        <li class="nav-item"><a class="nav-link language-switch" href="{{ lang_switch_href }}">{{ ui.language_switch }}</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

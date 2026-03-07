@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patricia-laurent-art"
+version = "0.1.0"
+description = "Static bilingual website generator for the Patricia Laurent art collection"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Michel Bierlaire" }
+]
+dependencies = [
+  "Jinja2>=3.1",
+  "qrcode[pil]>=7.4",
+]
+keywords = ["static-site", "art", "gallery", "bilingual", "jinja2", "qrcode"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
+  "Topic :: Multimedia :: Graphics",
+]
+
+[project.optional-dependencies]
+dev = [
+  "ruff>=0.9",
+  "mypy>=1.11",
+]
+
+[tool.setuptools]
+include-package-data = true
+py-modules = []
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
+check_untyped_defs = true
+no_implicit_optional = true
