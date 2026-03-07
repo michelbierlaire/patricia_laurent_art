@@ -20,7 +20,7 @@ SITE_DIR = ROOT / 'docs'
 SITE_TITLE = 'Patricia Laurent'
 SITE_EMAIL = 'patricia.laurent.12@gmail.com'
 DEFAULT_THEME = 'gallery'
-DEFAULT_BASE_URL = 'https://example.com/patricia-laurent-art/'
+DEFAULT_BASE_URL = 'https://michelbierlaire.github.io/patricia_laurent_art'
 DEFAULT_LOCALE = 'fr'
 SUPPORTED_LANGS = ('fr', 'en')
 
