@@ -30,7 +30,7 @@
 
     {% include 'components/footer.html' %}
 
-    <script id="gallery-data" type="application/json">{{ gallery_items_json }}</script>
+    <script id="gallery-data" type="application/json">{{ gallery_items | tojson }}</script>
     <script>
       window.GALLERY_I18N = {
         no_image: {{ ui.no_image | tojson }},
