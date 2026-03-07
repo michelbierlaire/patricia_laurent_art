@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Patricia Laurent — Collection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/styles.css">
+  </head>
+  <body class="theme-gallery gallery-page">
+<nav class="navbar navbar-expand-lg site-navbar sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">Patricia Laurent</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="../index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Collection</a></li>
+        <li class="nav-item"><a class="nav-link language-switch" href="../../en/collection/index.html">EN</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>    <main class="py-5">
+      <div class="container">
+        <div class="page-intro mb-4">
+          <h1 class="page-title">Collection</h1>
+        </div>
+
+<section class="filters-panel mb-4">
+  <div class="row g-3 align-items-end">
+    <div class="col-12 col-lg-4">
+      <label for="searchInput" class="form-label">Rechercher</label>
+      <input id="searchInput" type="search" class="form-control" placeholder="Titre, description, mots-clés…">
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="typeFilter" class="form-label">Type</label>
+      <select id="typeFilter" class="form-select">
+        <option value="">Tous les types</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="yearFilter" class="form-label">Date</label>
+      <select id="yearFilter" class="form-select">
+        <option value="">Toutes les dates</option>
+      </select>
+    </div>
+    <div class="col-12 col-md-4 col-lg-2">
+      <label for="keywordFilter" class="form-label">Mot-clé</label>
+      <select id="keywordFilter" class="form-select">
+        <option value="">Tous les mots-clés</option>
+      </select>
+    </div>
+    <div class="col-12 col-lg-2">
+      <label for="sortSelect" class="form-label">Tri</label>
+      <select id="sortSelect" class="form-select">
+        <option value="title-asc">Titre A → Z</option>
+        <option value="title-desc">Titre Z → A</option>
+        <option value="date-desc">Date décroissante</option>
+        <option value="date-asc">Date croissante</option>
+      </select>
+    </div>
+  </div>
+</section>
+        <div class="results-bar mb-3">
+          <span id="resultsCount"></span>
+        </div>
+
+        <div id="artworksGrid" class="row g-4"></div>
+      </div>
+    </main>
+
+<footer class="site-footer mt-5">
+  <div class="container py-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <div>
+        <div class="footer-title">Patricia Laurent</div>
+        <div class="footer-text">Site de présentation de la collection artistique de Patricia Laurent.</div>
+      </div>
+      <div class="text-md-end">
+        <a href="mailto:" class="footer-mail"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script id="gallery-data" type="application/json">[{&#34;id&#34;: &#34;bouquet&#34;, &#34;title&#34;: &#34;Bouquet Éphémère&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/bouquet.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/bouquet.html&#34;, &#34;search_blob&#34;: &#34;bouquet éphémère&#34;}, {&#34;id&#34;: &#34;colonne&#34;, &#34;title&#34;: &#34;Colonne des Temps&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/colonne.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/colonne.html&#34;, &#34;search_blob&#34;: &#34;colonne des temps&#34;}, {&#34;id&#34;: &#34;chats&#34;, &#34;title&#34;: &#34;Conversation de Chats&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chats.jpg&#34;, &#34;link&#34;: &#34;../oeuvres/chats.html&#34;, &#34;search_blob&#34;: &#34;conversation de chats&#34;}, {&#34;id&#34;: &#34;cuba-libre&#34;, &#34;title&#34;: &#34;Cuba Libre&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/cuba_libre.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/cuba-libre.html&#34;, &#34;search_blob&#34;: &#34;cuba libre&#34;}, {&#34;id&#34;: &#34;dark-love&#34;, &#34;title&#34;: &#34;Dark Love&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/dark_love.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/dark-love.html&#34;, &#34;search_blob&#34;: &#34;dark love&#34;}, {&#34;id&#34;: &#34;poissons&#34;, &#34;title&#34;: &#34;Famille Poisson&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/poissons.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/poissons.html&#34;, &#34;search_blob&#34;: &#34;famille poisson&#34;}, {&#34;id&#34;: &#34;fleurs-sechees&#34;, &#34;title&#34;: &#34;Fleurs Séchées&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/fleurs_sechees.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/fleurs-sechees.html&#34;, &#34;search_blob&#34;: &#34;fleurs séchées&#34;}, {&#34;id&#34;: &#34;foret&#34;, &#34;title&#34;: &#34;Forêt Intérieure&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/foret.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/foret.html&#34;, &#34;search_blob&#34;: &#34;forêt intérieure&#34;}, {&#34;id&#34;: &#34;hiver&#34;, &#34;title&#34;: &#34;Hiver&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/hiver.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/hiver.html&#34;, &#34;search_blob&#34;: &#34;hiver&#34;}, {&#34;id&#34;: &#34;jeune-fille&#34;, &#34;title&#34;: &#34;Jeune Fille&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/jeune_fille.JPEG&#34;, &#34;link&#34;: &#34;../oeuvres/jeune-fille.html&#34;, &#34;search_blob&#34;: &#34;jeune fille&#34;}, {&#34;id&#34;: &#34;famille&#34;, &#34;title&#34;: &#34;La Famille&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/famille.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/famille.html&#34;, &#34;search_blob&#34;: &#34;la famille&#34;}, {&#34;id&#34;: &#34;meduse&#34;, &#34;title&#34;: &#34;La Méduse&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/meduse.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/meduse.html&#34;, &#34;search_blob&#34;: &#34;la méduse&#34;}, {&#34;id&#34;: &#34;draqueen&#34;, &#34;title&#34;: &#34;La Reine Drag&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/draqueen.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/draqueen.html&#34;, &#34;search_blob&#34;: &#34;la reine drag&#34;}, {&#34;id&#34;: &#34;chouette&#34;, &#34;title&#34;: &#34;La Veilleuse Nocturne&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chouette.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/chouette.html&#34;, &#34;search_blob&#34;: &#34;la veilleuse nocturne&#34;}, {&#34;id&#34;: &#34;banc-poissons&#34;, &#34;title&#34;: &#34;Le Ballet des Poissons&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/banc_poissons.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/banc-poissons.html&#34;, &#34;search_blob&#34;: &#34;le ballet des poissons&#34;}, {&#34;id&#34;: &#34;le-chat&#34;, &#34;title&#34;: &#34;Le Chat&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/le_chat.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/le-chat.html&#34;, &#34;search_blob&#34;: &#34;le chat&#34;}, {&#34;id&#34;: &#34;chat-peint&#34;, &#34;title&#34;: &#34;Le Chat Peint&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chat_peint.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/chat-peint.html&#34;, &#34;search_blob&#34;: &#34;le chat peint&#34;}, {&#34;id&#34;: &#34;chien&#34;, &#34;title&#34;: &#34;Le Chien Fidèle&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chien.jpg&#34;, &#34;link&#34;: &#34;../oeuvres/chien.html&#34;, &#34;search_blob&#34;: &#34;le chien fidèle&#34;}, {&#34;id&#34;: &#34;chateau&#34;, &#34;title&#34;: &#34;Le Château Silencieux&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chateau.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/chateau.html&#34;, &#34;search_blob&#34;: &#34;le château silencieux&#34;}, {&#34;id&#34;: &#34;lezard&#34;, &#34;title&#34;: &#34;Le Lézard&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/lezard.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/lezard.html&#34;, &#34;search_blob&#34;: &#34;le lézard&#34;}, {&#34;id&#34;: &#34;le-pied&#34;, &#34;title&#34;: &#34;Le Pied&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/le_pied.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/le-pied.html&#34;, &#34;search_blob&#34;: &#34;le pied&#34;}, {&#34;id&#34;: &#34;lovers&#34;, &#34;title&#34;: &#34;Les Amants&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/lovers.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/lovers.html&#34;, &#34;search_blob&#34;: &#34;les amants&#34;}, {&#34;id&#34;: &#34;lutins-bleus&#34;, &#34;title&#34;: &#34;Les Lutins Bleus&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/lutins_bleus.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/lutins-bleus.html&#34;, &#34;search_blob&#34;: &#34;les lutins bleus&#34;}, {&#34;id&#34;: &#34;lutins-rouges&#34;, &#34;title&#34;: &#34;Les Lutins Rouges&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/lutins_rouges.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/lutins-rouges.html&#34;, &#34;search_blob&#34;: &#34;les lutins rouges&#34;}, {&#34;id&#34;: &#34;poules&#34;, &#34;title&#34;: &#34;Les Poules&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/poules.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/poules.html&#34;, &#34;search_blob&#34;: &#34;les poules&#34;}, {&#34;id&#34;: &#34;accordeon-orbe&#34;, &#34;title&#34;: &#34;L’Accordéon d’Orbe&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/accordeon_orbe.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/accordeon-orbe.html&#34;, &#34;search_blob&#34;: &#34;l’accordéon d’orbe&#34;}, {&#34;id&#34;: &#34;accouchement&#34;, &#34;title&#34;: &#34;Naissance&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/accouchement.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/accouchement.html&#34;, &#34;search_blob&#34;: &#34;naissance&#34;}, {&#34;id&#34;: &#34;las-vegas&#34;, &#34;title&#34;: &#34;Nuit à Las Vegas&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/las_vegas.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/las-vegas.html&#34;, &#34;search_blob&#34;: &#34;nuit à las vegas&#34;}, {&#34;id&#34;: &#34;pasteque&#34;, &#34;title&#34;: &#34;Pastèque d’Été&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/pasteque.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/pasteque.html&#34;, &#34;search_blob&#34;: &#34;pastèque d’été&#34;}, {&#34;id&#34;: &#34;chihuahua&#34;, &#34;title&#34;: &#34;Petit Prince Chihuahua&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/chihuahua.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/chihuahua.html&#34;, &#34;search_blob&#34;: &#34;petit prince chihuahua&#34;}, {&#34;id&#34;: &#34;tango&#34;, &#34;title&#34;: &#34;Tango&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/tango.JPG&#34;, &#34;link&#34;: &#34;../oeuvres/tango.html&#34;, &#34;search_blob&#34;: &#34;tango&#34;}, {&#34;id&#34;: &#34;trois-filles&#34;, &#34;title&#34;: &#34;Trois Filles&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/trois_filles.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/trois-filles.html&#34;, &#34;search_blob&#34;: &#34;trois filles&#34;}, {&#34;id&#34;: &#34;eclosion&#34;, &#34;title&#34;: &#34;Éclosion&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/eclosion.jpg&#34;, &#34;link&#34;: &#34;../oeuvres/eclosion.html&#34;, &#34;search_blob&#34;: &#34;éclosion&#34;}, {&#34;id&#34;: &#34;elegance&#34;, &#34;title&#34;: &#34;Élégance&#34;, &#34;type&#34;: &#34;&#34;, &#34;date&#34;: &#34;&#34;, &#34;year&#34;: -1, &#34;dimensions&#34;: &#34;&#34;, &#34;price&#34;: &#34;&#34;, &#34;keywords&#34;: [], &#34;description&#34;: &#34;&#34;, &#34;excerpt&#34;: &#34;&#34;, &#34;cover&#34;: &#34;../../images/elegance.jpeg&#34;, &#34;link&#34;: &#34;../oeuvres/elegance.html&#34;, &#34;search_blob&#34;: &#34;élégance&#34;}]</script>
+    <script>
+      window.GALLERY_I18N = {
+        no_image: "Image indisponible",
+        view_details: "Voir l\u2019\u0153uvre",
+        results_count_one: "\u0153uvre",
+        results_count_many: "\u0153uvres"
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/js/gallery.js"></script>
+  </body>
+</html>
