@@ -15,7 +15,7 @@ DATA_DIR = ROOT / 'data'
 IMAGES_DIR = ROOT / 'images'
 TEMPLATES_DIR = ROOT / 'templates'
 ASSETS_DIR = ROOT / 'assets'
-SITE_DIR = ROOT / 'site'
+SITE_DIR = ROOT / 'docs'
 
 SITE_TITLE = 'Patricia Laurent'
 SITE_EMAIL = 'patricia.laurent.12@gmail.com'
