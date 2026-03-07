@@ -1,3 +1,5 @@
 .DS_Store
 /.idea
 /patricia_laurent_art.egg-info
+/src/patricia_laurent_art.egg-info
+/src/patricia_laurent_art/__pycache__

@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row g-4">
+  <div class="col-xl-8">
+    <div class="editor-card p-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <div>
+          <h1 class="h3 mb-1">Œuvres</h1>
+          <div class="text-muted">{{ artworks|length }} œuvre(s)</div>
+        </div>
+        <a href="{{ url_for('new_artwork') }}" class="btn btn-primary">Nouvelle œuvre</a>
+      </div>
+      <div class="table-responsive">
+        <table class="table align-middle">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Titre FR</th>
+              <th>Type</th>
+              <th>Date</th>
+              <th>Identifiant</th>
+              <th class="text-end">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for artwork in artworks %}
+            <tr>
+              <td>
+                {% if artwork.pictures %}
+                  <img class="thumb-mini" src="/{{ artwork.pictures[0] }}" alt="{{ artwork.title.fr }}">
+                {% else %}
+                  <div class="thumb-mini d-flex align-items-center justify-content-center text-muted">—</div>
+                {% endif %}
+              </td>
+              <td>{{ artwork.title.fr or artwork.title.en or artwork.id }}</td>
+              <td>{{ artwork.type.fr }}</td>
+              <td>{{ artwork.date }}</td>
+              <td><code>{{ artwork.id }}</code></td>
+              <td class="text-end">
+                <div class="d-flex justify-content-end gap-2">
+                  <a href="{{ url_for('edit_artwork', artwork_id=artwork.id) }}" class="btn btn-sm btn-outline-secondary">Modifier</a>
+                  <form method="post" action="{{ url_for('duplicate_artwork', artwork_id=artwork.id) }}">
+                    <button class="btn btn-sm btn-outline-primary" type="submit">Dupliquer</button>
+                  </form>
+                  <form method="post" action="{{ url_for('delete_artwork', artwork_id=artwork.id) }}" onsubmit="return confirm('Supprimer cette œuvre ?');">
+                    <button class="btn btn-sm btn-outline-danger" type="submit">Supprimer</button>
+                  </form>
+                </div>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-4">
+    <div class="editor-card p-4">
+      <h2 class="h4 mb-3">Site public</h2>
+      <dl class="row mb-0">
+        <dt class="col-sm-4">Titre</dt><dd class="col-sm-8">{{ config.site_title }}</dd>
+        <dt class="col-sm-4">Email</dt><dd class="col-sm-8">{{ config.email }}</dd>
+        <dt class="col-sm-4">Thème</dt><dd class="col-sm-8">{{ config.default_theme }}</dd>
+        <dt class="col-sm-4">Langue</dt><dd class="col-sm-8">{{ config.default_locale }}</dd>
+      </dl>
+      <div class="d-grid gap-2 mt-4">
+        <a href="{{ url_for('site_config') }}" class="btn btn-outline-secondary">Modifier les paramètres du site</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

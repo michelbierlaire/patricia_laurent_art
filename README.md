@@ -1,151 +1,68 @@
-# Patricia Laurent — Static bilingual art website
+# Patricia Laurent Art
 
-This repository contains a bilingual static website generator for the art collection of Patricia Laurent.
+Projet complet pour gérer et publier la collection artistique de Patricia Laurent.
 
-## Features
+Le projet contient trois acteurs clairement séparés :
 
-- French and English versions
-- Static HTML generation from `data/oeuvres.json`
-- One page per artwork
-- Responsive gallery built with Bootstrap
-- Search, filters, and sorting in the gallery
-- Multiple visual themes selected at generation time
-- Artwork QR codes based on a configurable public base URL
-- Lightbox image viewer
-- GitHub Pages friendly output in `site/`
+- **gestionnaire de contenu** : modèle de données, persistance JSON, logique métier, import d'images ;
+- **générateur de site** : production du site statique bilingue dans `docs/` ;
+- **éditeur local** : interface web locale en français pour modifier les œuvres et la configuration du site.
 
-## Repository structure
+## Structure
 
 ```text
-patricia-laurent-art/
+patricia_laurent_art/
 ├── data/
-│   └── oeuvres.json
+│   ├── oeuvres.json
+│   └── site_config.json
 ├── images/
-│   ├── patricia.jpg
-│   └── ...
-├── templates/
-├── scripts/
-│   └── generate_site.py
 ├── assets/
-│   ├── css/
-│   ├── js/
-│   └── icons/
-├── site/
-├── README.md
-└── requirements.txt
+├── templates/
+│   ├── public/
+│   └── editor/
+├── docs/               # site généré
+├── scripts/
+│   ├── generate_site.py
+│   └── run_editor.py
+└── src/patricia_laurent_art/
 ```
-
-## JSON format
-
-The generator accepts either:
-
-1. the original simple structure:
-
-```json
-{
-  "id": "accordeon-orbe",
-  "name": "L’Accordéon d’Orbe",
-  "pictures": ["images/accordeon_orbe.JPG"],
-  "description": "",
-  "type": "",
-  "dimensions": "",
-  "date": "",
-  "price": "",
-  "keywords": [],
-  "notes": ""
-}
-```
-
-2. a bilingual structure:
-
-```json
-{
-  "id": "accordeon-orbe",
-  "title": {
-    "fr": "L’Accordéon d’Orbe",
-    "en": "The Accordion of Orbe"
-  },
-  "pictures": ["images/accordeon_orbe.JPG"],
-  "description": {
-    "fr": "",
-    "en": ""
-  },
-  "type": {
-    "fr": "Céramique",
-    "en": "Ceramic"
-  },
-  "dimensions": "",
-  "date": "",
-  "price": "",
-  "keywords": {
-    "fr": ["musique"],
-    "en": ["music"]
-  },
-  "notes": {
-    "fr": "",
-    "en": ""
-  }
-}
-```
-
-All fields are optional except `id`.
 
 ## Installation
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Generate the site
-
-Default generation:
+ou
 
 ```bash
-python scripts/generate_site.py
+pip install .
 ```
 
-Choose a theme:
+## Lancer l'éditeur local
 
 ```bash
-python scripts/generate_site.py --theme gallery
-python scripts/generate_site.py --theme contemporary
-python scripts/generate_site.py --theme museum
+python scripts/run_editor.py
 ```
 
-Set the public base URL for QR codes:
+Puis ouvrir l'adresse affichée dans le terminal, en général :
+
+```text
+http://127.0.0.1:5000
+```
+
+## Régénérer le site statique
 
 ```bash
-python scripts/generate_site.py --base-url "https://username.github.io/patricia-laurent-art"
+python scripts/generate_site.py --base-url "https://username.github.io/patricia_laurent_art"
 ```
 
-Use another JSON file inside `data/`:
+Le site est généré dans `docs/`.
 
-```bash
-python scripts/generate_site.py --json oeuvres.json
-```
+## Règles importantes
 
-## Output
-
-Generated files are written to `site/`:
-
-- `site/index.html` redirects to French by default
-- `site/fr/index.html` is the French home page
-- `site/fr/collection/index.html` is the French gallery
-- `site/fr/oeuvres/*.html` are French artwork pages
-- `site/en/index.html` is the English home page
-- `site/en/collection/index.html` is the English gallery
-- `site/en/artworks/*.html` are English artwork pages
-
-## Notes
-
-- Put all artwork images in `images/`
-- Put `patricia.jpg` in `images/`
-- The script copies `images/` and `assets/` into `site/`
-- If a field is missing, it is not displayed
-- If an artwork has no picture, a placeholder block is shown instead
-
-## GitHub Pages
-
-A straightforward setup is to publish the content of `site/`.
+- l'import d'image **refuse** un nom de fichier déjà présent dans `images/` ;
+- l'image n'est jamais renommée automatiquement ;
+- le contenu éditorial global est stocké dans `data/site_config.json` ;
+- les œuvres sont stockées dans `data/oeuvres.json` ;
+- le code de rendu public n'accède pas directement au JSON brut.

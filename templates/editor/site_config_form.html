@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" class="editor-card p-4 p-lg-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0">Paramètres du site</h1>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">Retour</a>
+  </div>
+
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <label class="form-label">Titre du site</label>
+      <input class="form-control" name="site_title" value="{{ config.site_title }}">
+    </div>
+    <div class="col-lg-4">
+      <label class="form-label">Email public</label>
+      <input class="form-control" name="email" value="{{ config.email }}">
+    </div>
+    <div class="col-lg-2">
+      <label class="form-label">Thème</label>
+      <select class="form-select" name="default_theme">
+        {% for key, value in themes.items() %}
+          <option value="{{ key }}" {% if key == config.default_theme %}selected{% endif %}>{{ key }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <div class="col-lg-2">
+      <label class="form-label">Langue par défaut</label>
+      <select class="form-select" name="default_locale">
+        <option value="fr" {% if config.default_locale == 'fr' %}selected{% endif %}>fr</option>
+        <option value="en" {% if config.default_locale == 'en' %}selected{% endif %}>en</option>
+      </select>
+    </div>
+  </div>
+
+  <hr class="my-4">
+  <div class="section-title">Page d'accueil</div>
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <label class="form-label">Image principale</label>
+      <input class="form-control" name="home_image" value="{{ config.home.image }}">
+    </div>
+    <div class="col-lg-6"></div>
+    <div class="col-lg-6">
+      <label class="form-label">Titre FR</label>
+      <input class="form-control" name="home_title_fr" value="{{ config.home.title.fr }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Titre EN</label>
+      <input class="form-control" name="home_title_en" value="{{ config.home.title.en }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Sous-titre FR</label>
+      <input class="form-control" name="home_lead_fr" value="{{ config.home.lead.fr }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Sous-titre EN</label>
+      <input class="form-control" name="home_lead_en" value="{{ config.home.lead.en }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Bouton principal FR</label>
+      <input class="form-control" name="hero_cta_fr" value="{{ config.home.hero_cta.fr }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Bouton principal EN</label>
+      <input class="form-control" name="hero_cta_en" value="{{ config.home.hero_cta.en }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Texte d'introduction FR</label>
+      <textarea class="form-control" name="hero_text_fr">{{ config.home.hero_text.fr }}</textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Texte d'introduction EN</label>
+      <textarea class="form-control" name="hero_text_en">{{ config.home.hero_text.en }}</textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Titre section FR</label>
+      <input class="form-control" name="intro_title_fr" value="{{ config.home.intro_title.fr }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Titre section EN</label>
+      <input class="form-control" name="intro_title_en" value="{{ config.home.intro_title.en }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Texte section FR</label>
+      <textarea class="form-control" name="intro_text_fr">{{ config.home.intro_text.fr }}</textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Texte section EN</label>
+      <textarea class="form-control" name="intro_text_en">{{ config.home.intro_text.en }}</textarea>
+    </div>
+  </div>
+
+  <div class="sticky-actions mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Enregistrer</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('dashboard') }}">Annuler</a>
+  </div>
+</form>
+{% endblock %}

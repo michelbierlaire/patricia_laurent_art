@@ -1,0 +1,36 @@
+{
+  "site_title": "Patricia Laurent",
+  "email": "patricia.laurent.12@gmail.com",
+  "default_theme": "gallery",
+  "default_locale": "fr",
+  "home": {
+    "image": "images/patricia.jpg",
+    "title": {
+      "fr": "Patricia Laurent",
+      "en": "Patricia Laurent"
+    },
+    "lead": {
+      "fr": "Artiste suisse — céramique et peinture",
+      "en": "Swiss artist — ceramics and painting"
+    },
+    "hero_text": {
+      "fr": "Patricia Laurent est une artiste suisse spécialisée dans la céramique et la peinture. Son univers associe sensibilité, matière et lumière dans une démarche à la fois contemporaine et profondément personnelle.",
+      "en": "Patricia Laurent is a Swiss artist specializing in ceramics and painting. Her work combines sensitivity, materiality, and light in an approach that is both contemporary and deeply personal."
+    },
+    "hero_cta": {
+      "fr": "Voir les œuvres",
+      "en": "View the artworks"
+    },
+    "intro_title": {
+      "fr": "Une collection vivante",
+      "en": "A living collection"
+    },
+    "intro_text": {
+      "fr": "Cette galerie présente une sélection d’œuvres de Patricia Laurent. Chaque pièce possède sa propre page, avec ses images, ses informations disponibles et ses notes éventuelles.",
+      "en": "This gallery presents a selection of artworks by Patricia Laurent. Each piece has its own page with images, available information, and optional notes."
+    },
+    "admin_button_enabled": false,
+    "extra": {}
+  },
+  "extra": {}
+}

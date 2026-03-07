@@ -4,37 +4,40 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "patricia-laurent-art"
-version = "0.1.0"
-description = "Static bilingual website generator for the Patricia Laurent art collection"
+version = "0.2.0"
+description = "Bilingual static website generator and local editor for the Patricia Laurent art collection"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
   { name = "Michel Bierlaire" }
 ]
+license = "MIT"
 dependencies = [
+  "Flask>=3.0",
   "Jinja2>=3.1",
   "qrcode[pil]>=7.4",
 ]
-keywords = ["static-site", "art", "gallery", "bilingual", "jinja2", "qrcode"]
+keywords = ["static-site", "art", "gallery", "jinja2", "qrcode", "flask"]
 classifiers = [
   "Programming Language :: Python :: 3",
   "Programming Language :: Python :: 3 :: Only",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
-  "Intended Audience :: End Users/Desktop",
+  "Programming Language :: Python :: 3.13",
   "Topic :: Internet :: WWW/HTTP :: Site Management",
-  "Topic :: Multimedia :: Graphics",
 ]
 
 [project.optional-dependencies]
 dev = [
-  "ruff>=0.9",
   "mypy>=1.11",
+  "ruff>=0.9",
 ]
 
 [tool.setuptools]
-include-package-data = true
-py-modules = []
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
 
 [tool.ruff]
 line-length = 100

@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" class="editor-card p-4 p-lg-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1 class="h3 mb-0">{% if is_new %}Nouvelle œuvre{% else %}Modifier l'œuvre{% endif %}</h1>
+    <a href="{{ url_for('dashboard') }}" class="btn btn-outline-secondary">Retour</a>
+  </div>
+
+  <div class="section-title">Identification</div>
+  <div class="row g-4">
+    <div class="col-lg-4">
+      <label class="form-label">Identifiant</label>
+      <input class="form-control" name="id" value="{{ artwork.id }}" {% if not is_new %}readonly{% endif %}>
+    </div>
+    <div class="col-lg-4">
+      <label class="form-label">Titre FR</label>
+      <input class="form-control" name="title_fr" value="{{ artwork.title.fr }}">
+    </div>
+    <div class="col-lg-4">
+      <label class="form-label">Titre EN</label>
+      <input class="form-control" name="title_en" value="{{ artwork.title.en }}">
+    </div>
+  </div>
+
+  <hr class="my-4">
+  <div class="section-title">Description et métadonnées</div>
+  <div class="row g-4">
+    <div class="col-lg-6">
+      <label class="form-label">Description FR</label>
+      <textarea class="form-control" name="description_fr">{{ artwork.description.fr }}</textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Description EN</label>
+      <textarea class="form-control" name="description_en">{{ artwork.description.en }}</textarea>
+    </div>
+    <div class="col-lg-3">
+      <label class="form-label">Type FR</label>
+      <input class="form-control" name="type_fr" value="{{ artwork.type.fr }}">
+    </div>
+    <div class="col-lg-3">
+      <label class="form-label">Type EN</label>
+      <input class="form-control" name="type_en" value="{{ artwork.type.en }}">
+    </div>
+    <div class="col-lg-2">
+      <label class="form-label">Dimensions</label>
+      <input class="form-control" name="dimensions" value="{{ artwork.dimensions }}">
+    </div>
+    <div class="col-lg-2">
+      <label class="form-label">Date</label>
+      <input class="form-control" name="date" value="{{ artwork.date }}">
+    </div>
+    <div class="col-lg-2">
+      <label class="form-label">Prix</label>
+      <input class="form-control" name="price" value="{{ artwork.price }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Mots-clés FR (séparés par des virgules)</label>
+      <input class="form-control" name="keywords_fr" value="{{ artwork.keywords.fr|join(', ') }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Mots-clés EN (séparés par des virgules)</label>
+      <input class="form-control" name="keywords_en" value="{{ artwork.keywords.en|join(', ') }}">
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Notes FR</label>
+      <textarea class="form-control" name="notes_fr">{{ artwork.notes.fr }}</textarea>
+    </div>
+    <div class="col-lg-6">
+      <label class="form-label">Notes EN</label>
+      <textarea class="form-control" name="notes_en">{{ artwork.notes.en }}</textarea>
+    </div>
+  </div>
+
+  <hr class="my-4">
+  <div class="section-title">Images associées</div>
+  <p class="text-muted">L'ordre des champs détermine l'ordre des images. La première image est l'image principale.</p>
+  <div class="row g-3">
+    {% for picture in artwork.pictures %}
+      <div class="col-lg-6">
+        <div class="border rounded-4 p-3 bg-light">
+          <div class="d-flex gap-3 align-items-center">
+            <img class="thumb-mini" src="/{{ picture }}" alt="">
+            <div class="flex-grow-1">
+              <label class="form-label">Chemin image</label>
+              <input class="form-control" name="pictures" value="{{ picture }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+    {% for _ in range(0, 4 - artwork.pictures|length if artwork.pictures|length < 4 else 0) %}
+      <div class="col-lg-6">
+        <label class="form-label">Chemin image</label>
+        <input class="form-control" name="pictures" value="">
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if not is_new %}
+  <div class="editor-card p-4 mt-4 border-0" style="background:#faf7f3;">
+    <h2 class="h5 mb-3">Importer une nouvelle image</h2>
+    <form method="post" enctype="multipart/form-data" action="{{ url_for('upload_image', artwork_id=artwork.id) }}">
+      <div class="row g-3 align-items-end">
+        <div class="col-lg-8">
+          <label class="form-label">Fichier image</label>
+          <input class="form-control" type="file" name="image_file" accept="image/*">
+          <div class="form-text">Si le nom de fichier existe déjà dans <code>images/</code>, l'import sera refusé.</div>
+        </div>
+        <div class="col-lg-4">
+          <button class="btn btn-outline-primary w-100" type="submit">Importer l'image</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  {% endif %}
+
+  <div class="sticky-actions mt-4 d-flex gap-2">
+    <button class="btn btn-primary" type="submit">Enregistrer</button>
+    <a class="btn btn-outline-secondary" href="{{ url_for('dashboard') }}">Annuler</a>
+  </div>
+</form>
+{% endblock %}
