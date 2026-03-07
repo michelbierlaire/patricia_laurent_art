@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import argparse
-import json
 import shutil
 from dataclasses import dataclass
 from pathlib import Path
@@ -413,7 +412,7 @@ def build_site(json_filename: str, theme: str, base_url: str) -> None:
             body_class=theme_info['body_class'],
             home_href='../index.html',
             lang_switch_href=f'../../{other_lang}/collection/index.html',
-            gallery_items_json=json.dumps(gallery_json, ensure_ascii=False),
+            gallery_items=gallery_json,
         )
         (gallery_folder / 'index.html').write_text(gallery_html, encoding='utf-8')
 
