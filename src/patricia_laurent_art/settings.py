@@ -10,7 +10,7 @@ TEMPLATES_DIR = PACKAGE_ROOT / "templates"
 DOCS_DIR = PACKAGE_ROOT / "docs"
 
 DEFAULT_THEME = "gallery"
-DEFAULT_BASE_URL = "https://michelbierlaire.github.io/patricia_laurent_art"
+DEFAULT_BASE_URL = "https://patricialaurent.art"
 DEFAULT_LOCALE = "fr"
 SUPPORTED_LANGS = ("fr", "en")
 THEMES = {
