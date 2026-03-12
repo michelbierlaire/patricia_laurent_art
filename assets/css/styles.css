@@ -255,6 +255,60 @@ a:hover { color: color-mix(in srgb, var(--accent) 84%, black); }
   line-height: 1;
 }
 
+.announcements-wrapper {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.announcement-banner {
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--surface-strong) 88%, var(--accent-2));
+  border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--border));
+  color: var(--text);
+}
+
+.announcement-title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  line-height: 1.05;
+  color: var(--text);
+}
+
+.announcement-text {
+  color: var(--muted);
+}
+
+.announcement-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.announcement-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border));
+  background: color-mix(in srgb, var(--surface-strong) 92%, white);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 0.92rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background var(--transition-soft), border-color var(--transition-soft), transform var(--transition-soft), color var(--transition-soft);
+}
+
+.announcement-btn:hover,
+.announcement-btn:focus-visible {
+  background: white;
+  border-color: color-mix(in srgb, var(--accent) 34%, var(--border));
+  color: var(--accent);
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
 .artwork-main-image {
   width: 100%;
   max-height: 680px;

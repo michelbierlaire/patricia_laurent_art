@@ -10,7 +10,8 @@ TEMPLATES_DIR = PACKAGE_ROOT / "templates"
 DOCS_DIR = PACKAGE_ROOT / "docs"
 
 DEFAULT_THEME = "gallery"
-DEFAULT_BASE_URL = "https://patricialaurent.art"
+CUSTOM_DOMAIN = "patricialaurent.art"
+DEFAULT_BASE_URL = f"https://{CUSTOM_DOMAIN}"
 DEFAULT_LOCALE = "fr"
 SUPPORTED_LANGS = ("fr", "en")
 THEMES = {

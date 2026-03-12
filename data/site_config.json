@@ -41,16 +41,27 @@
       "en": "Exhibition in Orbe"
     },
     "text": {
-      "fr": "Patricia Laurent expose du 1 au 31 mai 2026 à l'Espace Culturel Hessel, rue Davall 3, à Orbe.",
-      "en": "Patricia Laurent is exhibiting from May 1 to 31, 2026, at the Espace Culturel Hessel, rue Davall 3, in Orbe."
+      "fr": "Patricia Laurent expose du 1 au 31 mai 2026 à l’Espace Culturel Hessel à Orbe.",
+      "en": "Patricia Laurent is exhibiting from May 1 to 31, 2026 at Espace Culturel Hessel in Orbe."
     },
     "starts_on": "2026-03-01",
     "expires_on": "2026-06-01",
-    "link_url": "https://www.hesselespaceculturel.ch",
-    "link_label": {
-      "fr": "Espace Culturel Hessel",
-      "en": "Espace Culturel Hessel"
-    },
+    "links": [
+      {
+        "url": "https://maps.app.goo.gl/4pe8GDkJnv9z4YDY9",
+        "label": {
+          "fr": "Où ?",
+          "en": "Where ?"
+        }
+      },
+      {
+        "url": "https://www.hesselespaceculturel.ch",
+        "label": {
+          "fr": "Hessel",
+          "en": "Hessel"
+        }
+      }
+    ],
     "variant": "highlight",
     "extra": {}
   }

@@ -9,8 +9,8 @@ import qrcode
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from .content_manager import ContentManager
-from .models import Artwork, SiteConfig
-from .settings import ASSETS_DIR, DEFAULT_BASE_URL, DEFAULT_LOCALE, DOCS_DIR, IMAGES_DIR, PUBLIC_UI, SUPPORTED_LANGS, TEMPLATES_DIR, THEMES
+from .models import Announcement, Artwork, SiteConfig
+from .settings import ASSETS_DIR, DEFAULT_BASE_URL, DEFAULT_LOCALE, DOCS_DIR, IMAGES_DIR, PUBLIC_UI, SUPPORTED_LANGS, TEMPLATES_DIR, THEMES, CUSTOM_DOMAIN
 
 
 @dataclass
@@ -135,6 +135,7 @@ class SiteGenerator:
 
         root_index = self.env.get_template('root_index_template.html')
         (self.docs_dir / 'index.html').write_text(root_index.render(default_lang=config.default_locale or DEFAULT_LOCALE), encoding='utf-8')
+        (self.docs_dir / "CNAME").write_text(CUSTOM_DOMAIN + "\n", encoding="utf-8")
 
         for lang in SUPPORTED_LANGS:
             ui = PUBLIC_UI[lang]
@@ -228,15 +229,21 @@ class SiteGenerator:
         return views
 
     @staticmethod
-    def _announcement_payload(announcement, lang: str) -> dict[str, Any]:
+    def _announcement_payload(announcement: Announcement, lang: str) -> dict[str, Any]:
         return {
             'id': announcement.id,
             'title': announcement.title.get(lang),
             'text': announcement.text.get(lang),
             'starts_on': announcement.starts_on,
             'expires_on': announcement.expires_on,
-            'link_url': announcement.link_url,
-            'link_label': announcement.link_label.get(lang),
+            'links': [
+                {
+                    'url': link.url,
+                    'label': link.label.get(lang),
+                }
+                for link in announcement.links
+                if link.url and link.label.get(lang)
+            ],
             'variant': announcement.variant,
         }
 

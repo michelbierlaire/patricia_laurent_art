@@ -105,6 +105,25 @@ class HomePageContent:
 
 
 @dataclass
+class AnnouncementLink:
+    label: LocalizedText = field(default_factory=LocalizedText)
+    url: str = ""
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "AnnouncementLink":
+        return cls(
+            label=LocalizedText.from_raw(data.get("label")),
+            url=str(data.get("url", "") or "").strip(),
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "label": self.label.to_dict(),
+            "url": self.url,
+        }
+
+
+@dataclass
 class Announcement:
     id: str = ""
     enabled: bool = True
@@ -112,8 +131,7 @@ class Announcement:
     text: LocalizedText = field(default_factory=LocalizedText)
     starts_on: str = ""
     expires_on: str = ""
-    link_url: str = ""
-    link_label: LocalizedText = field(default_factory=LocalizedText)
+    links: list[AnnouncementLink] = field(default_factory=list)
     variant: str = "highlight"
     extra: dict[str, Any] = field(default_factory=dict)
 
@@ -126,8 +144,11 @@ class Announcement:
             text=LocalizedText.from_raw(data.get("text")),
             starts_on=str(data.get("starts_on", "") or "").strip(),
             expires_on=str(data.get("expires_on", "") or "").strip(),
-            link_url=str(data.get("link_url", "") or "").strip(),
-            link_label=LocalizedText.from_raw(data.get("link_label")),
+            links=[
+                AnnouncementLink.from_dict(item)
+                for item in data.get("links", [])
+                if isinstance(item, dict)
+            ],
             variant=str(data.get("variant", "highlight") or "highlight").strip() or "highlight",
             extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
         )
@@ -140,8 +161,7 @@ class Announcement:
             "text": self.text.to_dict(),
             "starts_on": self.starts_on,
             "expires_on": self.expires_on,
-            "link_url": self.link_url,
-            "link_label": self.link_label.to_dict(),
+            "links": [link.to_dict() for link in self.links],
             "variant": self.variant,
             "extra": self.extra,
         }
