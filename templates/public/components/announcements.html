@@ -1,0 +1,29 @@
+{% if announcements %}
+<div class="announcements-wrapper container my-4">
+  {% for announcement in announcements %}
+  <div class="announcement-banner alert alert-info shadow-sm mb-3" role="alert">
+
+    {% if announcement.title %}
+    <h5 class="announcement-title mb-1">
+      {{ announcement.title }}
+    </h5>
+    {% endif %}
+
+    {% if announcement.text %}
+    <div class="announcement-text">
+      {{ announcement.text }}
+    </div>
+    {% endif %}
+
+    {% if announcement.link_url %}
+    <div class="mt-2">
+      <a href="{{ announcement.link_url }}" class="announcement-link">
+        {{ announcement.link_label or "More information" }}
+      </a>
+    </div>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+</div>
+{% endif %}

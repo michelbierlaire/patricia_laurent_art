@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
+from datetime import date
 from typing import Any
 
 
@@ -104,12 +105,77 @@ class HomePageContent:
 
 
 @dataclass
+class Announcement:
+    id: str = ""
+    enabled: bool = True
+    title: LocalizedText = field(default_factory=LocalizedText)
+    text: LocalizedText = field(default_factory=LocalizedText)
+    starts_on: str = ""
+    expires_on: str = ""
+    link_url: str = ""
+    link_label: LocalizedText = field(default_factory=LocalizedText)
+    variant: str = "highlight"
+    extra: dict[str, Any] = field(default_factory=dict)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "Announcement":
+        return cls(
+            id=str(data.get("id", "") or "").strip(),
+            enabled=bool(data.get("enabled", True)),
+            title=LocalizedText.from_raw(data.get("title")),
+            text=LocalizedText.from_raw(data.get("text")),
+            starts_on=str(data.get("starts_on", "") or "").strip(),
+            expires_on=str(data.get("expires_on", "") or "").strip(),
+            link_url=str(data.get("link_url", "") or "").strip(),
+            link_label=LocalizedText.from_raw(data.get("link_label")),
+            variant=str(data.get("variant", "highlight") or "highlight").strip() or "highlight",
+            extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "enabled": self.enabled,
+            "title": self.title.to_dict(),
+            "text": self.text.to_dict(),
+            "starts_on": self.starts_on,
+            "expires_on": self.expires_on,
+            "link_url": self.link_url,
+            "link_label": self.link_label.to_dict(),
+            "variant": self.variant,
+            "extra": self.extra,
+        }
+
+    @staticmethod
+    def _parse_iso_date(value: str) -> date | None:
+        if not value:
+            return None
+        try:
+            return date.fromisoformat(value)
+        except ValueError:
+            return None
+
+    def is_active(self, today: date | None = None) -> bool:
+        if not self.enabled:
+            return False
+        current_day = today or date.today()
+        starts = self._parse_iso_date(self.starts_on)
+        expires = self._parse_iso_date(self.expires_on)
+        if starts is not None and current_day < starts:
+            return False
+        if expires is not None and current_day > expires:
+            return False
+        return True
+
+
+@dataclass
 class SiteConfig:
     site_title: str = "Patricia Laurent"
     email: str = ""
     default_theme: str = "gallery"
     default_locale: str = "fr"
     home: HomePageContent = field(default_factory=HomePageContent)
+    announcements: list[Announcement] = field(default_factory=list)
     extra: dict[str, Any] = field(default_factory=dict)
 
     @classmethod
@@ -120,6 +186,11 @@ class SiteConfig:
             default_theme=str(data.get("default_theme", "gallery")).strip() or "gallery",
             default_locale=str(data.get("default_locale", "fr")).strip() or "fr",
             home=HomePageContent.from_dict(data.get("home", {})),
+            announcements=[
+                Announcement.from_dict(item)
+                for item in data.get("announcements", [])
+                if isinstance(item, dict)
+            ],
             extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
         )
 
@@ -130,8 +201,13 @@ class SiteConfig:
             "default_theme": self.default_theme,
             "default_locale": self.default_locale,
             "home": self.home.to_dict(),
+            "announcements": [announcement.to_dict() for announcement in self.announcements],
             "extra": self.extra,
         }
+
+
+    def active_announcements(self, today: date | None = None) -> list[Announcement]:
+        return [announcement for announcement in self.announcements if announcement.is_active(today=today)]
 
 
 @dataclass

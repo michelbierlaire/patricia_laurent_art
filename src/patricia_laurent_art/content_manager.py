@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import replace
 from typing import Iterable
 
-from .models import Artwork, LocalizedList, LocalizedText, SiteConfig
+from .models import Announcement, Artwork, LocalizedList, LocalizedText, SiteConfig
 from .storage import Storage
 
 
@@ -55,7 +55,10 @@ class ContentManager:
             raise ValueError(f"Œuvre introuvable: {artwork_id}")
         new_id = self._generate_copy_id(artwork.id)
         duplicate = replace(artwork, id=new_id)
-        duplicate.title = LocalizedText(fr=f"{artwork.title.fr} (copie)".strip(), en=f"{artwork.title.en} (copy)".strip())
+        duplicate.title = LocalizedText(
+            fr=f"{artwork.title.fr} (copie)".strip(),
+            en=f"{artwork.title.en} (copy)".strip(),
+        )
         self.add_artwork(duplicate)
         return duplicate
 
@@ -65,8 +68,25 @@ class ContentManager:
     def save_site_config(self, config: SiteConfig) -> None:
         self.storage.save_site_config(config)
 
+    def get_active_announcements(self) -> list[Announcement]:
+        config = self.get_site_config()
+        return config.active_announcements()
+
+    def save_announcements(self, announcements: list[Announcement]) -> None:
+        config = self.get_site_config()
+        config.announcements = announcements
+        self.save_site_config(config)
+
     def create_empty_artwork(self, artwork_id: str) -> Artwork:
-        return Artwork(id=artwork_id, title=LocalizedText(), description=LocalizedText(), type=LocalizedText(), keywords=LocalizedList(), notes=LocalizedText(), pictures=[])
+        return Artwork(
+            id=artwork_id,
+            title=LocalizedText(),
+            description=LocalizedText(),
+            type=LocalizedText(),
+            keywords=LocalizedList(),
+            notes=LocalizedText(),
+            pictures=[],
+        )
 
     def reorder_pictures(self, artwork_id: str, pictures: Iterable[str]) -> None:
         artwork = self.get_artwork(artwork_id)

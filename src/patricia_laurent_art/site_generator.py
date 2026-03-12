@@ -120,6 +120,7 @@ class SiteGenerator:
     def generate(self, *, base_url: str | None = None, theme: str | None = None) -> Path:
         config = self.manager.get_site_config()
         artworks = self.manager.get_artworks()
+        active_announcements = config.active_announcements()
         selected_theme = theme or config.default_theme or 'gallery'
         theme_info = THEMES[selected_theme]
         public_base_url = base_url or DEFAULT_BASE_URL
@@ -140,6 +141,7 @@ class SiteGenerator:
             other_lang = 'en' if lang == 'fr' else 'fr'
             views = self._make_artwork_views(artworks, lang, public_base_url)
             gallery_json = [self._gallery_item_json(view) for view in views]
+            announcement_payloads = [self._announcement_payload(announcement, lang) for announcement in active_announcements]
             home_template = self.env.get_template('home_template.html')
             gallery_template = self.env.get_template('gallery_template.html')
             artwork_template = self.env.get_template('artwork_template.html')
@@ -155,6 +157,7 @@ class SiteGenerator:
                 lang_switch_href=f'../{other_lang}/index.html',
                 patricia_image='../' + config.home.image.replace('\\', '/').lstrip('./'),
                 home=config.home,
+                announcements=announcement_payloads,
             )
             (self.docs_dir / lang / 'index.html').write_text(home_html, encoding='utf-8')
 
@@ -170,6 +173,7 @@ class SiteGenerator:
                 collection_href='index.html',
                 lang_switch_href=f'../../{other_lang}/collection/index.html',
                 gallery_items=gallery_json,
+                announcements=announcement_payloads,
             )
             (gallery_folder / 'index.html').write_text(gallery_html, encoding='utf-8')
 
@@ -186,6 +190,7 @@ class SiteGenerator:
                     home_href=view.home_path,
                     collection_href=view.gallery_path,
                     lang_switch_href=view.lang_switch_path,
+                    announcements=announcement_payloads,
                 )
                 (artwork_folder / f'{view.id}.html').write_text(html, encoding='utf-8')
         return self.docs_dir
@@ -221,6 +226,19 @@ class SiteGenerator:
                 next_title=next_title,
             ))
         return views
+
+    @staticmethod
+    def _announcement_payload(announcement, lang: str) -> dict[str, Any]:
+        return {
+            'id': announcement.id,
+            'title': announcement.title.get(lang),
+            'text': announcement.text.get(lang),
+            'starts_on': announcement.starts_on,
+            'expires_on': announcement.expires_on,
+            'link_url': announcement.link_url,
+            'link_label': announcement.link_label.get(lang),
+            'variant': announcement.variant,
+        }
 
     @staticmethod
     def _gallery_item_json(view: ArtworkView) -> dict[str, Any]:
