@@ -813,11 +813,11 @@
   {
     "id": "accouchement",
     "title": {
-      "fr": "Naissance",
-      "en": "Birth"
+      "fr": "Origine",
+      "en": "Origin"
     },
     "description": {
-      "fr": "",
+      "fr": "Argile auto-durcissante patinée à la cire et aux pigments",
       "en": ""
     },
     "type": {
@@ -825,7 +825,7 @@
       "en": ""
     },
     "dimensions": "",
-    "date": "",
+    "date": "Septembre 2021",
     "price": "",
     "keywords": {
       "fr": [],
