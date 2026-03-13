@@ -151,38 +151,6 @@
     "extra": {}
   },
   {
-    "id": "poissons",
-    "title": {
-      "fr": "Famille Poisson",
-      "en": "Fish Family"
-    },
-    "description": {
-      "fr": "",
-      "en": ""
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "",
-    "date": "",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/poissons.jpeg",
-      "images/maman_poisson.jpeg",
-      "images/bebe_poisson.jpeg"
-    ],
-    "extra": {}
-  },
-  {
     "id": "fleurs-sechees",
     "title": {
       "fr": "Fleurs Séchées",
@@ -305,7 +273,7 @@
   {
     "id": "famille",
     "title": {
-      "fr": "La Famille",
+      "fr": "La famille",
       "en": "The Family"
     },
     "description": {
@@ -425,19 +393,19 @@
   {
     "id": "banc-poissons",
     "title": {
-      "fr": "Le Ballet des Poissons",
+      "fr": "Le banc de poissons",
       "en": "The Ballet of Fish"
     },
     "description": {
-      "fr": "",
+      "fr": "Argile blanche, peinture acrylique patinée à la cire sur structure d’acier.",
       "en": ""
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "50 x 60 x 32 cm",
+    "date": "2021",
     "price": "",
     "keywords": {
       "fr": [],
@@ -573,6 +541,66 @@
     "extra": {}
   },
   {
+    "id": "cri_silence",
+    "title": {
+      "fr": "Le cri du silence",
+      "en": "The sound of silence"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "Acrylique",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "2026",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cri_silence.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "cri_suspendu",
+    "title": {
+      "fr": "Le cri suspendu",
+      "en": ""
+    },
+    "description": {
+      "fr": "Peinture à l’huile sur ballon de plâtre",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "2026",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cri_suspendu.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "las-vegas",
     "title": {
       "fr": "Le jeu de la séduction",
@@ -629,36 +657,6 @@
     },
     "pictures": [
       "images/lezard.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "le-pied",
-    "title": {
-      "fr": "Tout est question d’équilibre",
-      "en": "It’s All About Balance"
-    },
-    "description": {
-      "fr": "Acrylique et relief en résine sur toile",
-      "en": "Acrylic and resin relief on canvas"
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "50 x 70 cm",
-    "date": "",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/le_pied.jpeg"
     ],
     "extra": {}
   },
@@ -759,15 +757,15 @@
       "en": "The Hens"
     },
     "description": {
-      "fr": "",
+      "fr": "Terre cuite et émail, technique de la plaque et émaillage",
       "en": ""
     },
     "type": {
-      "fr": "",
+      "fr": "Céramique",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "16 x 10 x 14 cm et 25 x 16 x 20 cm",
+    "date": "Mars 2025",
     "price": "",
     "keywords": {
       "fr": [],
@@ -904,6 +902,38 @@
     "extra": {}
   },
   {
+    "id": "poissons",
+    "title": {
+      "fr": "Poissons dorés",
+      "en": "Golden fishes"
+    },
+    "description": {
+      "fr": "Argile béton chamottée et émail doré + émail cuivré.\r\nTechnique plaque et modelage.",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "22 x 3 x 14 cm et 40 x 28 cm",
+    "date": "Novembre 2025",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/poissons.jpeg",
+      "images/maman_poisson.jpeg",
+      "images/bebe_poisson.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "tango",
     "title": {
       "fr": "Tango",
@@ -934,21 +964,81 @@
     "extra": {}
   },
   {
-    "id": "trois-filles",
+    "id": "Bobby",
     "title": {
-      "fr": "Trois Filles",
-      "en": "Three Girls"
+      "fr": "Tobby",
+      "en": "Tobby"
     },
     "description": {
+      "fr": "Argile jaune et émail",
+      "en": ""
+    },
+    "type": {
+      "fr": "Céramique",
+      "en": "Ceramics"
+    },
+    "dimensions": "Env. 25 cm",
+    "date": "Juillet 2021",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
       "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/tobby.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "le-pied",
+    "title": {
+      "fr": "Tout est question d’équilibre",
+      "en": "It’s All About Balance"
+    },
+    "description": {
+      "fr": "Acrylique et relief en résine sur toile",
+      "en": "Acrylic and resin relief on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/le_pied.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "trois-filles",
+    "title": {
+      "fr": "Trois amies",
+      "en": "Three friends"
+    },
+    "description": {
+      "fr": "Sculpture en grès noir, semi-émaillée avec effet métallisé.",
       "en": ""
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "19 x 11 x 31 cm",
+    "date": "Novembre 2025",
     "price": "",
     "keywords": {
       "fr": [],
@@ -1000,15 +1090,15 @@
       "en": "Elegance"
     },
     "description": {
-      "fr": "",
+      "fr": "Sculpture en céramique noire et peinture acrylique sur structure d’acier.",
       "en": ""
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "20 x 70 cm",
+    "date": "Juillet 2021",
     "price": "",
     "keywords": {
       "fr": [],
@@ -1020,7 +1110,9 @@
     },
     "pictures": [
       "images/elegance.jpeg",
-      "images/elegance_2.jpeg"
+      "images/elegance_2.jpeg",
+      "images/elegance_3.jpeg",
+      "images/elegance_4.jpeg"
     ],
     "extra": {}
   }
