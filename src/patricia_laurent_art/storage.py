@@ -18,10 +18,12 @@ class Storage:
             return []
 
         raw = json.loads(self.artworks_path.read_text(encoding="utf-8"))
+
         if not isinstance(raw, list):
             raise ValueError("oeuvres.json must contain a list.")
 
-        return [Artwork.from_dict(item) for item in raw if isinstance(item, dict)]
+        artworks = [Artwork.from_dict(item) for item in raw if isinstance(item, dict)]
+        return artworks
 
     def save_artworks(self, artworks: list[Artwork]) -> None:
         self.data_dir.mkdir(parents=True, exist_ok=True)
@@ -36,6 +38,7 @@ class Storage:
             return SiteConfig()
 
         raw = json.loads(self.site_config_path.read_text(encoding="utf-8"))
+
         if not isinstance(raw, dict):
             raise ValueError("site_config.json must contain an object.")
 

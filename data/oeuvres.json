@@ -398,7 +398,7 @@
     },
     "description": {
       "fr": "Argile blanche, peinture acrylique patinée à la cire sur structure d’acier.",
-      "en": ""
+      "en": "White clay with acrylic paint and wax patina on a steel structure."
     },
     "type": {
       "fr": "",
@@ -544,7 +544,7 @@
     "id": "cri_silence",
     "title": {
       "fr": "Le cri du silence",
-      "en": "The sound of silence"
+      "en": "The Sound of Silence"
     },
     "description": {
       "fr": "",
@@ -577,8 +577,8 @@
       "en": ""
     },
     "description": {
-      "fr": "Peinture à l’huile sur ballon de plâtre",
-      "en": ""
+      "fr": "Peinture à l’huile sur ballon de plâtre.",
+      "en": "Oil painting on a plaster sphere."
     },
     "type": {
       "fr": "",
@@ -758,7 +758,7 @@
     },
     "description": {
       "fr": "Terre cuite et émail, technique de la plaque et émaillage",
-      "en": ""
+      "en": "Earthenware and glaze, slab-built and glazed."
     },
     "type": {
       "fr": "Céramique",
@@ -818,7 +818,7 @@
     },
     "description": {
       "fr": "Argile auto-durcissante patinée à la cire et aux pigments",
-      "en": ""
+      "en": "Air-dry clay, finished with a wax and pigment patina."
     },
     "type": {
       "fr": "",
@@ -909,7 +909,7 @@
     },
     "description": {
       "fr": "Argile béton chamottée et émail doré + émail cuivré.\r\nTechnique plaque et modelage.",
-      "en": ""
+      "en": "Grogged clay with gold and copper glazes.\r\nSlab-built and hand-modeled."
     },
     "type": {
       "fr": "",
@@ -930,6 +930,36 @@
       "images/poissons.jpeg",
       "images/maman_poisson.jpeg",
       "images/bebe_poisson.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "poker",
+    "title": {
+      "fr": "Poker face ou faux semblants",
+      "en": "Poker Face or False Appearances"
+    },
+    "description": {
+      "fr": "Acrylique",
+      "en": "Acrylic"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/poker.jpeg"
     ],
     "extra": {}
   },
@@ -971,13 +1001,13 @@
     },
     "description": {
       "fr": "Argile jaune et émail",
-      "en": ""
+      "en": "Yellow clay with glaze"
     },
     "type": {
       "fr": "Céramique",
       "en": "Ceramics"
     },
-    "dimensions": "Env. 25 cm",
+    "dimensions": "~ 25 cm",
     "date": "Juillet 2021",
     "price": "",
     "keywords": {
@@ -1031,7 +1061,7 @@
     },
     "description": {
       "fr": "Sculpture en grès noir, semi-émaillée avec effet métallisé.",
-      "en": ""
+      "en": "Black stoneware sculpture, partially glazed with a metallic finish."
     },
     "type": {
       "fr": "",
@@ -1091,7 +1121,7 @@
     },
     "description": {
       "fr": "Sculpture en céramique noire et peinture acrylique sur structure d’acier.",
-      "en": ""
+      "en": "Black ceramic and acrylic on a steel frame."
     },
     "type": {
       "fr": "",
