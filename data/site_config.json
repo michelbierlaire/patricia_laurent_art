@@ -62,7 +62,7 @@
         }
       },
       {
-        "url": "assets/calendar/vernissage.ics",
+        "url": "/assets/calendar/vernissage.ics",
         "label": {
           "fr": "Télécharger (.ics)",
           "en": "Download (.ics)"
