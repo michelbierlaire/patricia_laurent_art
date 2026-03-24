@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+BEGIN:VEVENT
+SUMMARY:Vernissage exposition Patricia Laurent
+DTSTART:20260501T160000
+DTEND:20260501T200000
+DTSTAMP:20260301T120000
+LOCATION:Espace Culturel Hessel, Orbe, Suisse
+DESCRIPTION:Vernissage de l’exposition de Patricia Laurent
+TZID:Europe/Zurich
+END:VEVENT
+END:VCALENDAR
