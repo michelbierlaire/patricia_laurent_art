@@ -121,6 +121,38 @@
     "extra": {}
   },
   {
+    "id": "gina",
+    "title": {
+      "fr": "Dans les yeux de Gina",
+      "en": "In Gina’s Eyes"
+    },
+    "description": {
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "05/2026",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chien"
+      ],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/gina.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "dark-love",
     "title": {
       "fr": "Dark Love",
