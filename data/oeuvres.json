@@ -153,52 +153,21 @@
     "extra": {}
   },
   {
-    "id": "chats",
-    "title": {
-      "fr": "Plume aux côtés de son grand frère",
-      "en": "Plume Alongside Her Older Brother"
-    },
-    "description": {
-      "fr": "Chaton sphynx en terre cuite, patiné à la cire et aux pigments.",
-      "en": "Sphynx kitten in terracotta, finished with a wax and pigment patina."
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "",
-    "date": "12 / 2020",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/chats.jpg",
-      "images/chat.jpeg"
-    ],
-    "extra": {}
-  },
-  {
     "id": "dark-love",
     "title": {
       "fr": "Dark love",
       "en": "Dark Love"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Pastels secs, en écho à Melodía en la mineur d’Astor Piazzolla.",
+      "en": "Dry pastels, inspired by Melodía in A minor by Astor Piazzolla."
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "30 × 25 cm (œuvre) ; 40 × 30 cm (cadre)",
+    "date": "11 / 2024",
     "price": "",
     "keywords": {
       "fr": [],
@@ -209,7 +178,8 @@
       "en": ""
     },
     "pictures": [
-      "images/dark_love.JPG"
+      "images/dark_love_1.jpeg",
+      "images/dark_love_2.JPG"
     ],
     "extra": {}
   },
@@ -390,6 +360,36 @@
     },
     "pictures": [
       "images/meduse.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "autoportrait",
+    "title": {
+      "fr": "Je vis en accords",
+      "en": "I Live in Harmony"
+    },
+    "description": {
+      "fr": "Autoportrait, acrylique sur toile.",
+      "en": "Self-portrait, acrylic on canvas."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/autoportrait.jpeg"
     ],
     "extra": {}
   },
@@ -1118,6 +1118,37 @@
     "extra": {}
   },
   {
+    "id": "chats",
+    "title": {
+      "fr": "Plume aux côtés de son grand frère",
+      "en": "Plume Alongside Her Older Brother"
+    },
+    "description": {
+      "fr": "Chaton sphynx en terre cuite, patiné à la cire et aux pigments.",
+      "en": "Sphynx kitten in terracotta, finished with a wax and pigment patina."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "12 / 2020",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chats.jpg",
+      "images/chat.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "poissons",
     "title": {
       "fr": "Poissons dorés",
@@ -1389,6 +1420,36 @@
       "images/elegance_2.jpeg",
       "images/elegance_3.jpeg",
       "images/elegance_4.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "groove",
+    "title": {
+      "fr": "Dans le Groove 🎶🎵",
+      "en": "In the Groove 🎶🎵"
+    },
+    "description": {
+      "fr": "Aquarelle, inspirée de la chanson All About That Bass.",
+      "en": "Watercolor, inspired by the song All About That Bass."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "30 x 40 cm",
+    "date": "11 / 2024",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/groove.jpeg"
     ],
     "extra": {}
   }
