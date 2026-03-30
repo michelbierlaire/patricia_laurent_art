@@ -30,9 +30,41 @@
     "extra": {}
   },
   {
+    "id": "beurriers",
+    "title": {
+      "fr": "Beurrier breton",
+      "en": "Breton Butter Dish"
+    },
+    "description": {
+      "fr": "Beurrier breton traditionnel permettant la conservation du beurre sans réfrigération.\r\nLe principe repose sur l’eau, qui assure l’étanchéité à l’air et maintient le beurre frais et prêt à être étalé.\r\nTerre cuite sans chamotte, émaillée.",
+      "en": "Traditional Breton butter dish designed to preserve butter without refrigeration.\r\nWater creates an airtight seal, keeping the butter fresh and ready to spread. Ungrogged earthenware, glazed."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "Ø approx. 8 cm × H approx. 7 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/beurrier_1.jpeg",
+      "images/beurrier_2.jpeg",
+      "images/beurrier_3.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "bouquet",
     "title": {
-      "fr": "Bouquet Éphémère",
+      "fr": "Bouquet éphémère",
       "en": "Ephemeral Bouquet"
     },
     "description": {
@@ -60,9 +92,40 @@
     "extra": {}
   },
   {
+    "id": "charlequin",
+    "title": {
+      "fr": "Chat’rlequin",
+      "en": "Cat’lequin"
+    },
+    "description": {
+      "fr": "Modelage en terre noire, décor peint à l’acrylique.",
+      "en": "Black clay sculpture, hand-modeled and decorated with acrylic paint."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "02 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/charlequin_1.jpeg",
+      "images/charlequin_2.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "colonne",
     "title": {
-      "fr": "Colonne des Temps",
+      "fr": "Colonne des temps",
       "en": "Column of Time"
     },
     "description": {
@@ -92,19 +155,19 @@
   {
     "id": "chats",
     "title": {
-      "fr": "Conversation de Chats",
-      "en": "Cats in Conversation"
+      "fr": "Plume aux côtés de son grand frère",
+      "en": "Plume Alongside Her Older Brother"
     },
     "description": {
-      "fr": "",
-      "en": ""
+      "fr": "Chaton sphynx en terre cuite, patiné à la cire et aux pigments.",
+      "en": "Sphynx kitten in terracotta, finished with a wax and pigment patina."
     },
     "type": {
       "fr": "",
       "en": ""
     },
     "dimensions": "",
-    "date": "",
+    "date": "12 / 2020",
     "price": "",
     "keywords": {
       "fr": [],
@@ -121,41 +184,9 @@
     "extra": {}
   },
   {
-    "id": "gina",
-    "title": {
-      "fr": "Dans les yeux de Gina",
-      "en": "In Gina’s Eyes"
-    },
-    "description": {
-      "fr": "Acrylique sur carton entoilé",
-      "en": "Acrylic on canvas board"
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "40 x 50 cm",
-    "date": "05/2026",
-    "price": "",
-    "keywords": {
-      "fr": [
-        "chien"
-      ],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/gina.jpeg"
-    ],
-    "extra": {}
-  },
-  {
     "id": "dark-love",
     "title": {
-      "fr": "Dark Love",
+      "fr": "Dark love",
       "en": "Dark Love"
     },
     "description": {
@@ -183,9 +214,39 @@
     "extra": {}
   },
   {
+    "id": "caleton",
+    "title": {
+      "fr": "El Caletòn , Tenerife.",
+      "en": "El Caletòn , Tenerife."
+    },
+    "description": {
+      "fr": "Aquarelle.",
+      "en": "Watercolor."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "20 × 20 cm (œuvre) ; 33 × 33 cm (cadre)",
+    "date": "03 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/caleton.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "fleurs-sechees",
     "title": {
-      "fr": "Fleurs Séchées",
+      "fr": "Fleurs séchées",
       "en": "Dried Flowers"
     },
     "description": {
@@ -215,7 +276,7 @@
   {
     "id": "foret",
     "title": {
-      "fr": "Forêt Intérieure",
+      "fr": "Forêt intérieure",
       "en": "Inner Forest"
     },
     "description": {
@@ -269,6 +330,36 @@
     },
     "pictures": [
       "images/hiver.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lama",
+    "title": {
+      "fr": "Il était une fois en Bolivie…",
+      "en": "Once Upon a Time in Bolivia…"
+    },
+    "description": {
+      "fr": "Petite statuette en terre cuite, décor à la peinture acrylique.",
+      "en": "Small terracotta figurine, decorated with acrylic paint."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "05 / 2021",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lama.jpeg"
     ],
     "extra": {}
   },
@@ -395,7 +486,7 @@
   {
     "id": "chouette",
     "title": {
-      "fr": "La Veilleuse Nocturne",
+      "fr": "La Veilleuse nocturne",
       "en": "The Nocturnal Watcher"
     },
     "description": {
@@ -485,7 +576,7 @@
   {
     "id": "chat-peint",
     "title": {
-      "fr": "Le Chat Peint",
+      "fr": "Le Chat peint",
       "en": "The Painted Cat"
     },
     "description": {
@@ -515,7 +606,7 @@
   {
     "id": "chien",
     "title": {
-      "fr": "Le Chien Fidèle",
+      "fr": "Le Chien fidèle",
       "en": "The Faithful Dog"
     },
     "description": {
@@ -545,7 +636,7 @@
   {
     "id": "chateau",
     "title": {
-      "fr": "Le Château Silencieux",
+      "fr": "Le Château silencieux",
       "en": "The Silent Castle"
     },
     "description": {
@@ -665,7 +756,7 @@
   {
     "id": "lezard",
     "title": {
-      "fr": "Le Lézard",
+      "fr": "Le lézard",
       "en": "The Lizard"
     },
     "description": {
@@ -695,7 +786,7 @@
   {
     "id": "lovers",
     "title": {
-      "fr": "Les Amants",
+      "fr": "Les amants",
       "en": "The Lovers"
     },
     "description": {
@@ -725,7 +816,7 @@
   {
     "id": "lutins-bleus",
     "title": {
-      "fr": "Les Lutins Bleus",
+      "fr": "Les lutins bleus",
       "en": "The Blue Goblins"
     },
     "description": {
@@ -755,7 +846,7 @@
   {
     "id": "lutins-rouges",
     "title": {
-      "fr": "Les Lutins Rouges",
+      "fr": "Les lutins rouges",
       "en": "The Red Goblins"
     },
     "description": {
@@ -785,12 +876,12 @@
   {
     "id": "poules",
     "title": {
-      "fr": "Les Poules",
+      "fr": "Les poules",
       "en": "The Hens"
     },
     "description": {
-      "fr": "Terre cuite et émail, technique de la plaque et émaillage",
-      "en": "Earthenware and glaze, slab-built and glazed."
+      "fr": "Terre cuite émaillée, réalisée selon les techniques de la plaque et du modelage.",
+      "en": "Glazed terracotta, created using slab-building and modeling techniques."
     },
     "type": {
       "fr": "Céramique",
@@ -813,9 +904,41 @@
     "extra": {}
   },
   {
+    "id": "gina",
+    "title": {
+      "fr": "Les Yeux de Gina — York-Pop",
+      "en": "In Gina’s Eyes — York-Pop"
+    },
+    "description": {
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "03/2026",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chien"
+      ],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/gina.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "accordeon-orbe",
     "title": {
-      "fr": "L’Accordéon d’Orbe",
+      "fr": "L’accordéon d’Orbe",
       "en": "The Accordion of Orbe"
     },
     "description": {
@@ -839,6 +962,67 @@
     },
     "pictures": [
       "images/accordeon_orbe.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "kayla",
+    "title": {
+      "fr": "Naissance de Kayla",
+      "en": "The Birth of Kayla"
+    },
+    "description": {
+      "fr": "Argile blanche, décor à l’engobe, finition par une seconde cuisson à l’émail transparent.",
+      "en": "White clay, engobe decoration, finished with a second firing using a transparent glaze."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "09 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/kayla_1.jpeg",
+      "images/kayla_2.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "logan",
+    "title": {
+      "fr": "Naissance de Logan",
+      "en": "The Birth of Logan"
+    },
+    "description": {
+      "fr": "Petite assiette en céramique blanche, décor à l’engobe, réalisée selon une technique de moulage.",
+      "en": "Small white ceramic plate with engobe decoration, made using a molding technique."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "~ 20 cm",
+    "date": "08 / 2025",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/logan.jpeg"
     ],
     "extra": {}
   },
@@ -876,7 +1060,7 @@
   {
     "id": "pasteque",
     "title": {
-      "fr": "Pastèque d’Été",
+      "fr": "Pastèque d’été",
       "en": "Summer Watermelon"
     },
     "description": {
@@ -906,7 +1090,7 @@
   {
     "id": "chihuahua",
     "title": {
-      "fr": "Petit Prince Chihuahua",
+      "fr": "Petit prince chihuahua",
       "en": "Little Chihuahua Prince"
     },
     "description": {
@@ -1112,6 +1296,36 @@
     },
     "pictures": [
       "images/trois_filles.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "violon",
+    "title": {
+      "fr": "Violon",
+      "en": "Violin"
+    },
+    "description": {
+      "fr": "Plat violon en relief en céramique d’argile blanche.\r\nDécoration à l’émail.",
+      "en": "Low-relief ceramic plate with a violin motif in white clay.\r\nGlazed decoration."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "~ 20 x 30 cm",
+    "date": "12 / 2020",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/violon.jpeg"
     ],
     "extra": {}
   },
