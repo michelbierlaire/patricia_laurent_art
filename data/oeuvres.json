@@ -13,12 +13,16 @@
       "fr": "",
       "en": ""
     },
-    "dimensions": "",
-    "date": "",
+    "dimensions": "30 x 40 cm",
+    "date": "09 / 2025",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
     },
     "notes": {
       "fr": "",
@@ -109,8 +113,14 @@
     "date": "02 / 2023",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chat",
+        "statue"
+      ],
+      "en": [
+        "cat",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -140,8 +150,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -149,6 +163,40 @@
     },
     "pictures": [
       "images/colonne.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "groove",
+    "title": {
+      "fr": "Dans le Groove 🎶🎵",
+      "en": "In the Groove 🎶🎵"
+    },
+    "description": {
+      "fr": "Aquarelle, inspirée de la chanson All About That Bass.",
+      "en": "Watercolor, inspired by the song All About That Bass."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "30 x 40 cm",
+    "date": "11 / 2024",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "accordéon"
+      ],
+      "en": [
+        "accordeon"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/groove.jpeg"
     ],
     "extra": {}
   },
@@ -321,8 +369,12 @@
     "date": "05 / 2021",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -348,7 +400,7 @@
       "en": ""
     },
     "dimensions": "",
-    "date": "",
+    "date": "11 / 2025",
     "price": "",
     "keywords": {
       "fr": [],
@@ -381,8 +433,14 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "accordéon",
+        "portrait"
+      ],
+      "en": [
+        "accordeon",
+        "portrait"
+      ]
     },
     "notes": {
       "fr": "",
@@ -411,8 +469,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -471,8 +533,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
     },
     "notes": {
       "fr": "",
@@ -501,8 +567,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -531,8 +601,14 @@
     "date": "2021",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue",
+        "poisson"
+      ],
+      "en": [
+        "statue",
+        "fish"
+      ]
     },
     "notes": {
       "fr": "",
@@ -561,8 +637,14 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chat",
+        "statue"
+      ],
+      "en": [
+        "cat",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -591,8 +673,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chat"
+      ],
+      "en": [
+        "cat"
+      ]
     },
     "notes": {
       "fr": "",
@@ -621,8 +707,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chien"
+      ],
+      "en": [
+        "dog"
+      ]
     },
     "notes": {
       "fr": "",
@@ -681,8 +771,14 @@
     "date": "2026",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "ballon",
+        "portrait"
+      ],
+      "en": [
+        "balloon",
+        "portrait"
+      ]
     },
     "notes": {
       "fr": "",
@@ -711,6 +807,40 @@
     "date": "2026",
     "price": "",
     "keywords": {
+      "fr": [
+        "ballon"
+      ],
+      "en": [
+        "balloon"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cri_suspendu.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "coeur",
+    "title": {
+      "fr": "Le Cœur en harmonie",
+      "en": "The Heart in Harmony"
+    },
+    "description": {
+      "fr": "Collage et acrylique sur toile",
+      "en": "Collage and acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "",
+    "keywords": {
       "fr": [],
       "en": []
     },
@@ -719,7 +849,7 @@
       "en": ""
     },
     "pictures": [
-      "images/cri_suspendu.jpeg"
+      "images/coeur.jpeg"
     ],
     "extra": {}
   },
@@ -771,8 +901,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -801,8 +935,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -831,8 +969,14 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "lutin",
+        "statue"
+      ],
+      "en": [
+        "goblin",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -861,8 +1005,14 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "lutin",
+        "statue"
+      ],
+      "en": [
+        "goblin",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -924,7 +1074,9 @@
       "fr": [
         "chien"
       ],
-      "en": []
+      "en": [
+        "dog"
+      ]
     },
     "notes": {
       "fr": "",
@@ -953,8 +1105,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "accordéon"
+      ],
+      "en": [
+        "accordeon"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1044,8 +1200,12 @@
     "date": "Septembre 2021",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1105,8 +1265,14 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chien",
+        "statue"
+      ],
+      "en": [
+        "dog",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1135,8 +1301,12 @@
     "date": "12 / 2020",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "chat"
+      ],
+      "en": [
+        "cat"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1166,8 +1336,14 @@
     "date": "Novembre 2025",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "poisson",
+        "statue"
+      ],
+      "en": [
+        "fish",
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1198,8 +1374,12 @@
     "date": "",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1258,8 +1438,12 @@
     "date": "Juillet 2021",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1285,7 +1469,7 @@
       "en": ""
     },
     "dimensions": "50 x 70 cm",
-    "date": "",
+    "date": "09 / 2025",
     "price": "",
     "keywords": {
       "fr": [],
@@ -1318,8 +1502,12 @@
     "date": "Novembre 2025",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1408,8 +1596,12 @@
     "date": "Juillet 2021",
     "price": "",
     "keywords": {
-      "fr": [],
-      "en": []
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
     },
     "notes": {
       "fr": "",
@@ -1420,36 +1612,6 @@
       "images/elegance_2.jpeg",
       "images/elegance_3.jpeg",
       "images/elegance_4.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "groove",
-    "title": {
-      "fr": "Dans le Groove 🎶🎵",
-      "en": "In the Groove 🎶🎵"
-    },
-    "description": {
-      "fr": "Aquarelle, inspirée de la chanson All About That Bass.",
-      "en": "Watercolor, inspired by the song All About That Bass."
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "30 x 40 cm",
-    "date": "11 / 2024",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/groove.jpeg"
     ],
     "extra": {}
   }
