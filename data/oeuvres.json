@@ -1614,5 +1614,35 @@
       "images/elegance_4.jpeg"
     ],
     "extra": {}
+  },
+  {
+    "id": "fortuna",
+    "title": {
+      "fr": "Fortuna",
+      "en": "Fortuna"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "60 x 73 cm",
+    "date": "12 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/fortuna.jpeg"
+    ],
+    "extra": {}
   }
 ]
