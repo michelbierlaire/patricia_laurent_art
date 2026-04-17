@@ -292,6 +292,36 @@
     "extra": {}
   },
   {
+    "id": "fortuna",
+    "title": {
+      "fr": "Fortuna",
+      "en": "Fortuna"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "60 x 73 cm",
+    "date": "12 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/fortuna.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "foret",
     "title": {
       "fr": "Forêt intérieure",
@@ -1616,21 +1646,21 @@
     "extra": {}
   },
   {
-    "id": "fortuna",
+    "id": "lev",
     "title": {
-      "fr": "Fortuna",
-      "en": "Fortuna"
+      "fr": "Mouvement en équilibre",
+      "en": "Movement in Balance"
     },
     "description": {
-      "fr": "Acrylique sur toile",
-      "en": "Acrylic on canvas"
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
     },
     "type": {
       "fr": "",
       "en": ""
     },
-    "dimensions": "60 x 73 cm",
-    "date": "12 / 2023",
+    "dimensions": "40 x 50 cm",
+    "date": "",
     "price": "",
     "keywords": {
       "fr": [],
@@ -1641,7 +1671,7 @@
       "en": ""
     },
     "pictures": [
-      "images/fortuna.jpeg"
+      "images/lev.jpeg"
     ],
     "extra": {}
   }
