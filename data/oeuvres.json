@@ -34,6 +34,36 @@
     "extra": {}
   },
   {
+    "id": "orbe",
+    "title": {
+      "fr": "Avant minuit",
+      "en": "Before midnight"
+    },
+    "description": {
+      "fr": "Aquarelle sur papier coton",
+      "en": "Watercolor on cotton paper"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "20 x 30 cm",
+    "date": "04 / 2026",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/orbe.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "beurriers",
     "title": {
       "fr": "Beurrier breton",
@@ -1152,6 +1182,36 @@
     "extra": {}
   },
   {
+    "id": "lev",
+    "title": {
+      "fr": "Mouvement en équilibre",
+      "en": "Movement in Balance"
+    },
+    "description": {
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lev.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "kayla",
     "title": {
       "fr": "Naissance de Kayla",
@@ -1642,36 +1702,6 @@
       "images/elegance_2.jpeg",
       "images/elegance_3.jpeg",
       "images/elegance_4.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "lev",
-    "title": {
-      "fr": "Mouvement en équilibre",
-      "en": "Movement in Balance"
-    },
-    "description": {
-      "fr": "Acrylique sur carton entoilé",
-      "en": "Acrylic on canvas board"
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "40 x 50 cm",
-    "date": "",
-    "price": "",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/lev.jpeg"
     ],
     "extra": {}
   }
