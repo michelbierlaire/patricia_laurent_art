@@ -1,0 +1,1708 @@
+[
+  {
+    "id": "jeune-fille",
+    "title": {
+      "fr": "Au delà du regard",
+      "en": "Beyond the Eyes"
+    },
+    "description": {
+      "fr": "Acrylique sur papier",
+      "en": "Acrylic on paper"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 60 cm",
+    "date": "09 / 2025",
+    "price": "400 CHF (avec cadre)",
+    "keywords": {
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/jeune_fille.JPEG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "orbe",
+    "title": {
+      "fr": "Avant minuit",
+      "en": "Before midnight"
+    },
+    "description": {
+      "fr": "Aquarelle sur papier coton",
+      "en": "Watercolor on cotton paper"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "30 x 40 cm",
+    "date": "04 / 2026",
+    "price": "200 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/orbe.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "beurriers",
+    "title": {
+      "fr": "Beurrier breton",
+      "en": "Breton Butter Dish"
+    },
+    "description": {
+      "fr": "Beurrier breton traditionnel permettant la conservation du beurre sans réfrigération.\r\nLe principe repose sur l’eau, qui assure l’étanchéité à l’air et maintient le beurre frais et prêt à être étalé.\r\nTerre cuite sans chamotte, émaillée.",
+      "en": "Traditional Breton butter dish designed to preserve butter without refrigeration.\r\nWater creates an airtight seal, keeping the butter fresh and ready to spread. Ungrogged earthenware, glazed."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "Ø approx. 8 cm × H approx. 7 cm",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/beurrier_1.jpeg",
+      "images/beurrier_2.jpeg",
+      "images/beurrier_3.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "bouquet",
+    "title": {
+      "fr": "Bouquet éphémère",
+      "en": "Ephemeral Bouquet"
+    },
+    "description": {
+      "fr": "Aquarelle",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "250 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/bouquet.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "charlequin",
+    "title": {
+      "fr": "Chat’rlequin",
+      "en": "Cat’lequin"
+    },
+    "description": {
+      "fr": "Modelage en terre noire, décor peint à l’acrylique.",
+      "en": "Black clay sculpture, hand-modeled and decorated with acrylic paint."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "02 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chat",
+        "statue"
+      ],
+      "en": [
+        "cat",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/charlequin_1.jpeg",
+      "images/charlequin_2.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "colonne",
+    "title": {
+      "fr": "Colonne des temps",
+      "en": "Column of Time"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/colonne.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "groove",
+    "title": {
+      "fr": "Dans le Groove 🎶🎵",
+      "en": "In the Groove 🎶🎵"
+    },
+    "description": {
+      "fr": "Aquarelle, inspirée de la chanson All About That Bass.",
+      "en": "Watercolor, inspired by the song All About That Bass."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "11 / 2024",
+    "price": "350 CHF (avec cadre)",
+    "keywords": {
+      "fr": [
+        "accordéon"
+      ],
+      "en": [
+        "accordeon"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/groove.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "dark-love",
+    "title": {
+      "fr": "Dark love",
+      "en": "Dark Love"
+    },
+    "description": {
+      "fr": "Pastels secs, en écho à Melodía en la mineur d’Astor Piazzolla.",
+      "en": "Dry pastels, inspired by Melodía in A minor by Astor Piazzolla."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "30 × 25 cm (œuvre) ; 40 × 30 cm (cadre)",
+    "date": "11 / 2024",
+    "price": "350 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/dark_love_1.jpeg",
+      "images/dark_love_2.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "caleton",
+    "title": {
+      "fr": "El Caletòn , Tenerife.",
+      "en": "El Caletòn , Tenerife."
+    },
+    "description": {
+      "fr": "Aquarelle.",
+      "en": "Watercolor."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "20 × 20 cm (œuvre) ; 33 × 33 cm (cadre)",
+    "date": "03 / 2023",
+    "price": "280 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/caleton.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "fleurs-sechees",
+    "title": {
+      "fr": "Fleurs séchées",
+      "en": "Dried Flowers"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/fleurs_sechees.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "fortuna",
+    "title": {
+      "fr": "Fortuna",
+      "en": "Fortuna"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "60 x 73 cm",
+    "date": "12 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/fortuna.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "foret",
+    "title": {
+      "fr": "Forêt intérieure",
+      "en": "Inner Forest"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/foret.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "hiver",
+    "title": {
+      "fr": "Hiver",
+      "en": "Winter"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/hiver.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lama",
+    "title": {
+      "fr": "Il était une fois en Bolivie…",
+      "en": "Once Upon a Time in Bolivia…"
+    },
+    "description": {
+      "fr": "Petite statuette en terre cuite, décor à la peinture acrylique.",
+      "en": "Small terracotta figurine, decorated with acrylic paint."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "05 / 2021",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lama.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "meduse",
+    "title": {
+      "fr": "Instinct reptilien",
+      "en": "Reptilian instinct"
+    },
+    "description": {
+      "fr": "Argile auto durcissante et acrylique sur bois",
+      "en": "Air-dry clay and acrylic on wood"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "52 x 58 cm",
+    "date": "11 / 2025",
+    "price": "780 CHF (avec cadre en bois)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/meduse.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "autoportrait",
+    "title": {
+      "fr": "Je vis en accords",
+      "en": "I Live in Harmony"
+    },
+    "description": {
+      "fr": "Autoportrait, acrylique sur toile.",
+      "en": "Self-portrait, acrylic on canvas."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "",
+    "price": "500 CHF",
+    "keywords": {
+      "fr": [
+        "accordéon",
+        "portrait"
+      ],
+      "en": [
+        "accordeon",
+        "portrait"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/autoportrait.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "famille",
+    "title": {
+      "fr": "La famille",
+      "en": "The Family"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/famille.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "cuba-libre",
+    "title": {
+      "fr": "La femme au cigare",
+      "en": "The Woman with the Cigar"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cuba_libre.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "draqueen",
+    "title": {
+      "fr": "La Queen et le Bunny",
+      "en": "The Queen and the Bunny"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "600 CHF (réservé)",
+    "keywords": {
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/draqueen.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chouette",
+    "title": {
+      "fr": "La Veilleuse nocturne",
+      "en": "The Nocturnal Watcher"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chouette.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "banc-poissons",
+    "title": {
+      "fr": "Le banc de poissons",
+      "en": "The Ballet of Fish"
+    },
+    "description": {
+      "fr": "Argile blanche, peinture acrylique patinée à la cire sur structure d’acier.",
+      "en": "White clay with acrylic paint and wax patina on a steel structure."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 60 x 32 cm",
+    "date": "2021",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [
+        "statue",
+        "poisson"
+      ],
+      "en": [
+        "statue",
+        "fish"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/banc_poissons.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "le-chat",
+    "title": {
+      "fr": "Le Chat",
+      "en": "The Cat"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chat",
+        "statue"
+      ],
+      "en": [
+        "cat",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/le_chat.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chat-peint",
+    "title": {
+      "fr": "Le Chat peint",
+      "en": "The Painted Cat"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chat"
+      ],
+      "en": [
+        "cat"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chat_peint.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chien",
+    "title": {
+      "fr": "Le Chien fidèle",
+      "en": "The Faithful Dog"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chien"
+      ],
+      "en": [
+        "dog"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chien.jpg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chateau",
+    "title": {
+      "fr": "Le Château silencieux",
+      "en": "The Silent Castle"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "22 x 28 cm (oeuvre) 30 x 40 cm (cadre)",
+    "date": "10 / 2024",
+    "price": "250 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chateau.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "cri_silence",
+    "title": {
+      "fr": "Le cri du silence",
+      "en": "The Sound of Silence"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "Acrylique",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "2026",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [
+        "ballon",
+        "portrait"
+      ],
+      "en": [
+        "balloon",
+        "portrait"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cri_silence.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "cri_suspendu",
+    "title": {
+      "fr": "Le cri suspendu",
+      "en": ""
+    },
+    "description": {
+      "fr": "Peinture à l’huile sur ballon de plâtre.",
+      "en": "Oil painting on a plaster sphere."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "2026",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [
+        "ballon"
+      ],
+      "en": [
+        "balloon"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/cri_suspendu.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "coeur",
+    "title": {
+      "fr": "Le Cœur en harmonie",
+      "en": "The Heart in Harmony"
+    },
+    "description": {
+      "fr": "Collage et acrylique sur toile",
+      "en": "Collage and acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "450 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/coeur.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "las-vegas",
+    "title": {
+      "fr": "Le jeu de la séduction",
+      "en": "The Seduction Gamble"
+    },
+    "description": {
+      "fr": "Acrylique sur toile",
+      "en": "Acrylic on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/las_vegas.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lezard",
+    "title": {
+      "fr": "Le lézard",
+      "en": "The Lizard"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lezard.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lovers",
+    "title": {
+      "fr": "Les amants",
+      "en": "The Lovers"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lovers.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lutins-bleus",
+    "title": {
+      "fr": "Les lutins bleus",
+      "en": "The Blue Goblins"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "lutin",
+        "statue"
+      ],
+      "en": [
+        "goblin",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lutins_bleus.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lutins-rouges",
+    "title": {
+      "fr": "Les lutins rouges",
+      "en": "The Red Goblins"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "lutin",
+        "statue"
+      ],
+      "en": [
+        "goblin",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lutins_rouges.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "poules",
+    "title": {
+      "fr": "Les poules",
+      "en": "The Hens"
+    },
+    "description": {
+      "fr": "Terre cuite émaillée, réalisée selon les techniques de la plaque et du modelage.",
+      "en": "Glazed terracotta, created using slab-building and modeling techniques."
+    },
+    "type": {
+      "fr": "Céramique",
+      "en": ""
+    },
+    "dimensions": "16 x 10 x 14 cm et 25 x 16 x 20 cm",
+    "date": "03 / 2025",
+    "price": "220 CHF (grande) - 160 CHF (petite)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/poules.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "gina",
+    "title": {
+      "fr": "Les Yeux de Gina — York-Pop",
+      "en": "In Gina’s Eyes — York-Pop"
+    },
+    "description": {
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "03/2026",
+    "price": "500 CHF",
+    "keywords": {
+      "fr": [
+        "chien"
+      ],
+      "en": [
+        "dog"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/gina.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "accordeon-orbe",
+    "title": {
+      "fr": "L’accordéon d’Orbe",
+      "en": "The Accordion of Orbe"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "28 x 38 cm (oeuvre) 40 x 50 cm (cadre)",
+    "date": "",
+    "price": "350 CHF (avec cadre)",
+    "keywords": {
+      "fr": [
+        "accordéon"
+      ],
+      "en": [
+        "accordeon"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/accordeon_orbe.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "lev",
+    "title": {
+      "fr": "Mouvement en équilibre",
+      "en": "Movement in Balance"
+    },
+    "description": {
+      "fr": "Acrylique sur carton entoilé",
+      "en": "Acrylic on canvas board"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "550 CHF (réservé)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/lev.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "kayla",
+    "title": {
+      "fr": "Naissance de Kayla",
+      "en": "The Birth of Kayla"
+    },
+    "description": {
+      "fr": "Argile blanche, décor à l’engobe, finition par une seconde cuisson à l’émail transparent.",
+      "en": "White clay, engobe decoration, finished with a second firing using a transparent glaze."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "09 / 2023",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/kayla_1.jpeg",
+      "images/kayla_2.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "logan",
+    "title": {
+      "fr": "Naissance de Logan",
+      "en": "The Birth of Logan"
+    },
+    "description": {
+      "fr": "Petite assiette en céramique blanche, décor à l’engobe, réalisée selon une technique de moulage.",
+      "en": "Small white ceramic plate with engobe decoration, made using a molding technique."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "~ 20 cm",
+    "date": "08 / 2025",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/logan.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "accouchement",
+    "title": {
+      "fr": "Origine",
+      "en": "Origin"
+    },
+    "description": {
+      "fr": "Argile auto-durcissante patinée à la cire et aux pigments",
+      "en": "Air-dry clay, finished with a wax and pigment patina."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "09 / 2021",
+    "price": "280 CHF",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/accouchement.jpeg",
+      "images/accouchement_2.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "pasteque",
+    "title": {
+      "fr": "Pastèque d’été",
+      "en": "Summer Watermelon"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm (avec cadre)",
+    "date": "",
+    "price": "300 CHF (avec cadre)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/pasteque.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chihuahua",
+    "title": {
+      "fr": "Petit prince chihuahua",
+      "en": "Little Chihuahua Prince"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chien",
+        "statue"
+      ],
+      "en": [
+        "dog",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chihuahua.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "chats",
+    "title": {
+      "fr": "Plume aux côtés de son grand frère",
+      "en": "Plume Alongside Her Older Brother"
+    },
+    "description": {
+      "fr": "Chaton sphynx en terre cuite, patiné à la cire et aux pigments.",
+      "en": "Sphynx kitten in terracotta, finished with a wax and pigment patina."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "12 / 2020",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "chat"
+      ],
+      "en": [
+        "cat"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/chats.jpg",
+      "images/chat.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "poissons",
+    "title": {
+      "fr": "Poissons dorés",
+      "en": "Golden fishes"
+    },
+    "description": {
+      "fr": "Argile béton chamottée et émail doré + émail cuivré.\r\nTechnique plaque et modelage.",
+      "en": "Grogged clay with gold and copper glazes.\r\nSlab-built and hand-modeled."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "22 x 3 x 14 cm et 40 x 28 cm",
+    "date": "11 / 2025",
+    "price": "320 CHF (grand)",
+    "keywords": {
+      "fr": [
+        "poisson",
+        "statue"
+      ],
+      "en": [
+        "fish",
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/poissons.jpeg",
+      "images/maman_poisson.jpeg",
+      "images/bebe_poisson.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "poker",
+    "title": {
+      "fr": "Poker face ou faux semblants",
+      "en": "Poker Face or False Appearances"
+    },
+    "description": {
+      "fr": "Acrylique",
+      "en": "Acrylic"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "02 /2026",
+    "price": "600 CHF",
+    "keywords": {
+      "fr": [
+        "portrait"
+      ],
+      "en": [
+        "portrait"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/poker.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "tango",
+    "title": {
+      "fr": "Tango",
+      "en": "Tango"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "20 x 30 cm (oeuvre) 31 x 41 cm (avec cadre)",
+    "date": "11 / 2024",
+    "price": "200 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/tango.JPG"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "Bobby",
+    "title": {
+      "fr": "Tobby",
+      "en": "Tobby"
+    },
+    "description": {
+      "fr": "Argile jaune et émail",
+      "en": "Yellow clay with glaze"
+    },
+    "type": {
+      "fr": "Céramique",
+      "en": "Ceramics"
+    },
+    "dimensions": "~ 25 cm",
+    "date": "07 / 2021",
+    "price": "",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/tobby.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "le-pied",
+    "title": {
+      "fr": "Tout est question d’équilibre",
+      "en": "It’s All About Balance"
+    },
+    "description": {
+      "fr": "Acrylique et relief en résine sur toile",
+      "en": "Acrylic and resin relief on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "50 x 70 cm",
+    "date": "09 / 2025",
+    "price": "600 CHF (réservé)",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/le_pied.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "trois-filles",
+    "title": {
+      "fr": "Trois amies",
+      "en": "Three friends"
+    },
+    "description": {
+      "fr": "Sculpture en grès noir, semi-émaillée avec effet métallisé.",
+      "en": "Black stoneware sculpture, partially glazed with a metallic finish."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "19 x 11 x 31 cm",
+    "date": "11 / 2025",
+    "price": "480 CHF",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/trois_filles.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "violon",
+    "title": {
+      "fr": "Violon",
+      "en": "Violin"
+    },
+    "description": {
+      "fr": "Plat violon en relief en céramique d’argile blanche.\r\nDécoration à l’émail.",
+      "en": "Low-relief ceramic plate with a violin motif in white clay.\r\nGlazed decoration."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "~ 20 x 30 cm",
+    "date": "12 / 2020",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/violon.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "eclosion",
+    "title": {
+      "fr": "Éclosion",
+      "en": "Blossoming"
+    },
+    "description": {
+      "fr": "",
+      "en": ""
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "",
+    "date": "",
+    "price": "",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/eclosion.jpg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "elegance",
+    "title": {
+      "fr": "Élégance",
+      "en": "Elegance"
+    },
+    "description": {
+      "fr": "Sculpture en céramique noire et peinture acrylique sur structure d’acier.",
+      "en": "Black ceramic and acrylic on a steel frame."
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "20 x 70 cm",
+    "date": "07 / 2021",
+    "price": "650 CHF",
+    "keywords": {
+      "fr": [
+        "statue"
+      ],
+      "en": [
+        "statue"
+      ]
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/elegance.jpeg",
+      "images/elegance_2.jpeg",
+      "images/elegance_3.jpeg",
+      "images/elegance_4.jpeg"
+    ],
+    "extra": {}
+  }
+]
