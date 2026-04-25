@@ -1481,6 +1481,36 @@
     "extra": {}
   },
   {
+    "id": "oeil",
+    "title": {
+      "fr": "Quand la musique pleure...",
+      "en": "When Music Weeps…"
+    },
+    "description": {
+      "fr": "Acrylique et collage sur toile",
+      "en": "Acrylic and collage on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 40 cm",
+    "date": "04 / 2026",
+    "price": "450",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/oeil.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "tango",
     "title": {
       "fr": "Tango",
@@ -1702,6 +1732,36 @@
       "images/elegance_2.jpeg",
       "images/elegance_3.jpeg",
       "images/elegance_4.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "picasso",
+    "title": {
+      "fr": "Silence en rouge majeur",
+      "en": "Silence in Red Major"
+    },
+    "description": {
+      "fr": "Acrylique et collage sur toile",
+      "en": "Acrylic and collage on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "500",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/picasso.jpeg"
     ],
     "extra": {}
   }
