@@ -814,6 +814,36 @@
     "extra": {}
   },
   {
+    "id": "parapluie",
+    "title": {
+      "fr": "Le coup du parapluie",
+      "en": "The Umbrella Trick"
+    },
+    "description": {
+      "fr": "Aquarelle",
+      "en": "Watercolor"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "42 x 32 cm avec cadre",
+    "date": "11 / 2024",
+    "price": "230 CHF avec cadre",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/parapluie.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "cri_silence",
     "title": {
       "fr": "Le cri du silence",
@@ -1511,6 +1541,36 @@
     "extra": {}
   },
   {
+    "id": "picasso",
+    "title": {
+      "fr": "Silence en rouge majeur",
+      "en": "Silence in Red Major"
+    },
+    "description": {
+      "fr": "Acrylique et collage sur toile",
+      "en": "Acrylic and collage on canvas"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "40 x 50 cm",
+    "date": "04 / 2026",
+    "price": "500",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/picasso.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "tango",
     "title": {
       "fr": "Tango",
@@ -1639,6 +1699,36 @@
     "extra": {}
   },
   {
+    "id": "valse",
+    "title": {
+      "fr": "Un temps de valse",
+      "en": "A Waltz Moment"
+    },
+    "description": {
+      "fr": "Aquarelle",
+      "en": "Watercolor"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "32 x 42 cm avec cadre",
+    "date": "11 / 2024",
+    "price": "180 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/valse.jpeg"
+    ],
+    "extra": {}
+  },
+  {
     "id": "violon",
     "title": {
       "fr": "Violon",
@@ -1665,6 +1755,36 @@
     },
     "pictures": [
       "images/violon.jpeg"
+    ],
+    "extra": {}
+  },
+  {
+    "id": "mer",
+    "title": {
+      "fr": "Échappée en mer",
+      "en": "Adrift at Sea"
+    },
+    "description": {
+      "fr": "Aquarelle",
+      "en": "Watercolor"
+    },
+    "type": {
+      "fr": "",
+      "en": ""
+    },
+    "dimensions": "33 x 27 cm avec cadre",
+    "date": "02 / 2023",
+    "price": "230 CHF",
+    "keywords": {
+      "fr": [],
+      "en": []
+    },
+    "notes": {
+      "fr": "",
+      "en": ""
+    },
+    "pictures": [
+      "images/mer.jpeg"
     ],
     "extra": {}
   },
@@ -1732,36 +1852,6 @@
       "images/elegance_2.jpeg",
       "images/elegance_3.jpeg",
       "images/elegance_4.jpeg"
-    ],
-    "extra": {}
-  },
-  {
-    "id": "picasso",
-    "title": {
-      "fr": "Silence en rouge majeur",
-      "en": "Silence in Red Major"
-    },
-    "description": {
-      "fr": "Acrylique et collage sur toile",
-      "en": "Acrylic and collage on canvas"
-    },
-    "type": {
-      "fr": "",
-      "en": ""
-    },
-    "dimensions": "40 x 50 cm",
-    "date": "04 / 2026",
-    "price": "500",
-    "keywords": {
-      "fr": [],
-      "en": []
-    },
-    "notes": {
-      "fr": "",
-      "en": ""
-    },
-    "pictures": [
-      "images/picasso.jpeg"
     ],
     "extra": {}
   }

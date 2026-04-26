@@ -5,6 +5,7 @@ import json
 import shutil
 import subprocess
 import tempfile
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -21,7 +22,22 @@ DATA_FILE = PROJECT_ROOT / "data" / "oeuvres.json"
 QR_DIR = PROJECT_ROOT / "docs" / "assets" / "qrcodes" / "fr"
 
 
+def remove_latex_unsupported_characters(text: str) -> str:
+    cleaned_chars: list[str] = []
+    for char in text:
+        category = unicodedata.category(char)
+        if category in {"Cs", "Co", "Cn"}:
+            continue
+        if category == "So":
+            continue
+        if ord(char) > 0xFFFF:
+            continue
+        cleaned_chars.append(char)
+    return "".join(cleaned_chars).strip()
+
+
 def escape_latex(text: str) -> str:
+    text = remove_latex_unsupported_characters(text)
     replacements = {
         "\\": r"\textbackslash{}",
         "&": r"\&",
@@ -158,7 +174,7 @@ def build_latex(
                     title_tex = escape_latex(label.title)
                     cell = rf"\LabelCell{{{qr_tex_path}}}{{{title_tex}}}"
                 else:
-                    cell = r"\LabelCell{}{ }"
+                    cell = r"\LabelCell{}{}"
                 row_cells.append(cell)
 
             row_line = " & ".join(row_cells) + r" \\ \hline"
