@@ -3,6 +3,7 @@
   "email": "patricia.laurent.12@gmail.com",
   "default_theme": "museum",
   "default_locale": "fr",
+  "goatcounter_url": "https://michelbierlaire.goatcounter.com/count",
   "home": {
     "image": "images/patricia.jpg",
     "title": {

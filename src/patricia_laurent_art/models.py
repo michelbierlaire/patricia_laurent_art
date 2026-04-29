@@ -15,7 +15,10 @@ class LocalizedText:
         if isinstance(value, cls):
             return value
         if isinstance(value, dict):
-            return cls(fr=str(value.get("fr", "") or "").strip(), en=str(value.get("en", "") or "").strip())
+            return cls(
+                fr=str(value.get("fr", "") or "").strip(),
+                en=str(value.get("en", "") or "").strip(),
+            )
         if value is None:
             return cls()
         text = str(value).strip()
@@ -47,7 +50,9 @@ class LocalizedList:
         if isinstance(value, cls):
             return value
         if isinstance(value, dict):
-            return cls(fr=normalize(value.get("fr", [])), en=normalize(value.get("en", [])))
+            return cls(
+                fr=normalize(value.get("fr", [])), en=normalize(value.get("en", []))
+            )
         if isinstance(value, list):
             normalized = normalize(value)
             return cls(fr=normalized.copy(), en=normalized.copy())
@@ -87,7 +92,11 @@ class HomePageContent:
             intro_title=LocalizedText.from_raw(data.get("intro_title")),
             intro_text=LocalizedText.from_raw(data.get("intro_text")),
             admin_button_enabled=bool(data.get("admin_button_enabled", False)),
-            extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
+            extra=(
+                dict(data.get("extra", {}))
+                if isinstance(data.get("extra", {}), dict)
+                else {}
+            ),
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -149,8 +158,13 @@ class Announcement:
                 for item in data.get("links", [])
                 if isinstance(item, dict)
             ],
-            variant=str(data.get("variant", "highlight") or "highlight").strip() or "highlight",
-            extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
+            variant=str(data.get("variant", "highlight") or "highlight").strip()
+            or "highlight",
+            extra=(
+                dict(data.get("extra", {}))
+                if isinstance(data.get("extra", {}), dict)
+                else {}
+            ),
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -194,6 +208,7 @@ class SiteConfig:
     email: str = ""
     default_theme: str = "gallery"
     default_locale: str = "fr"
+    goatcounter_url: str = ""
     home: HomePageContent = field(default_factory=HomePageContent)
     announcements: list[Announcement] = field(default_factory=list)
     extra: dict[str, Any] = field(default_factory=dict)
@@ -201,17 +216,24 @@ class SiteConfig:
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> "SiteConfig":
         return cls(
-            site_title=str(data.get("site_title", "Patricia Laurent")).strip() or "Patricia Laurent",
+            site_title=str(data.get("site_title", "Patricia Laurent")).strip()
+            or "Patricia Laurent",
             email=str(data.get("email", "")).strip(),
-            default_theme=str(data.get("default_theme", "gallery")).strip() or "gallery",
+            default_theme=str(data.get("default_theme", "gallery")).strip()
+            or "gallery",
             default_locale=str(data.get("default_locale", "fr")).strip() or "fr",
+            goatcounter_url=str(data.get("goatcounter_url", "") or "").strip(),
             home=HomePageContent.from_dict(data.get("home", {})),
             announcements=[
                 Announcement.from_dict(item)
                 for item in data.get("announcements", [])
                 if isinstance(item, dict)
             ],
-            extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
+            extra=(
+                dict(data.get("extra", {}))
+                if isinstance(data.get("extra", {}), dict)
+                else {}
+            ),
         )
 
     def to_dict(self) -> dict[str, Any]:
@@ -220,14 +242,20 @@ class SiteConfig:
             "email": self.email,
             "default_theme": self.default_theme,
             "default_locale": self.default_locale,
+            "goatcounter_url": self.goatcounter_url,
             "home": self.home.to_dict(),
-            "announcements": [announcement.to_dict() for announcement in self.announcements],
+            "announcements": [
+                announcement.to_dict() for announcement in self.announcements
+            ],
             "extra": self.extra,
         }
 
-
     def active_announcements(self, today: date | None = None) -> list[Announcement]:
-        return [announcement for announcement in self.announcements if announcement.is_active(today=today)]
+        return [
+            announcement
+            for announcement in self.announcements
+            if announcement.is_active(today=today)
+        ]
 
 
 @dataclass
@@ -256,8 +284,16 @@ class Artwork:
             price=str(data.get("price", "") or "").strip(),
             keywords=LocalizedList.from_raw(data.get("keywords")),
             notes=LocalizedText.from_raw(data.get("notes")),
-            pictures=[str(p).replace('\\', '/').strip() for p in data.get("pictures", []) if str(p).strip()],
-            extra=dict(data.get("extra", {})) if isinstance(data.get("extra", {}), dict) else {},
+            pictures=[
+                str(p).replace("\\", "/").strip()
+                for p in data.get("pictures", [])
+                if str(p).strip()
+            ],
+            extra=(
+                dict(data.get("extra", {}))
+                if isinstance(data.get("extra", {}), dict)
+                else {}
+            ),
         )
 
     def to_dict(self) -> dict[str, Any]:
