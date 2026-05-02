@@ -6,6 +6,7 @@ PACKAGE_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PACKAGE_ROOT / "data"
 IMAGES_DIR = PACKAGE_ROOT / "images"
 ASSETS_DIR = PACKAGE_ROOT / "assets"
+DOCUMENTS_DIR = PACKAGE_ROOT / "documents"
 TEMPLATES_DIR = PACKAGE_ROOT / "templates"
 DOCS_DIR = PACKAGE_ROOT / "docs"
 
@@ -61,6 +62,11 @@ PUBLIC_UI = {
         "gallery_heading": "Collection",
         "results_count_one": "œuvre",
         "results_count_many": "œuvres",
+        "press": "Presse",
+        "read_pdf": "Lire le PDF",
+        "read_online": "Lire l’article",
+        "newspaper": "Journal",
+        "published_on": "Publié le",
     },
     "en": {
         "lang_name": "English",
@@ -102,5 +108,10 @@ PUBLIC_UI = {
         "gallery_heading": "Collection",
         "results_count_one": "artwork",
         "results_count_many": "artworks",
+        "press": "Press",
+        "read_pdf": "Read PDF",
+        "read_online": "Read article",
+        "newspaper": "Newspaper",
+        "published_on": "Published on",
     },
 }

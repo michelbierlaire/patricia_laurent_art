@@ -9,12 +9,13 @@ import qrcode
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from .content_manager import ContentManager
-from .models import Announcement, Artwork, SiteConfig
+from .models import Announcement, Artwork, PressArticle, SiteConfig
 from .settings import (
     ASSETS_DIR,
     DEFAULT_BASE_URL,
     DEFAULT_LOCALE,
     DOCS_DIR,
+    DOCUMENTS_DIR,
     IMAGES_DIR,
     PUBLIC_UI,
     SUPPORTED_LANGS,
@@ -113,6 +114,51 @@ class ArtworkView:
         return path
 
 
+@dataclass
+class PressArticleView:
+    raw: PressArticle
+    lang: str
+
+    @property
+    def id(self) -> str:
+        return self.raw.id
+
+    @property
+    def title(self) -> str:
+        return self.raw.title_for(self.lang)
+
+    @property
+    def newspaper(self) -> str:
+        return self.raw.newspaper
+
+    @property
+    def date(self) -> str:
+        return self.raw.date
+
+    @property
+    def pdf(self) -> str:
+        return self._normalize_document_path(self.raw.pdf)
+
+    @property
+    def url(self) -> str:
+        return self.raw.url
+
+    @property
+    def note(self) -> str:
+        return self.raw.note_for(self.lang)
+
+    @staticmethod
+    def _normalize_document_path(path_str: str) -> str:
+        path = path_str.replace("\\", "/").lstrip("./")
+        if not path:
+            return ""
+        if path.startswith("documents/"):
+            return "../../" + path
+        if path.startswith("/documents/"):
+            return path
+        return path
+
+
 def extract_year(date_str: str) -> int:
     digits = "".join(ch if ch.isdigit() else " " for ch in date_str)
     parts = [part for part in digits.split() if len(part) == 4]
@@ -142,6 +188,7 @@ class SiteGenerator:
     ) -> Path:
         config = self.manager.get_site_config()
         artworks = self.manager.get_artworks()
+        press_articles = self.manager.get_press_articles()
         active_announcements = config.active_announcements()
         selected_theme = theme or config.default_theme or "gallery"
         theme_info = THEMES[selected_theme]
@@ -151,9 +198,12 @@ class SiteGenerator:
         (self.docs_dir / "fr" / "oeuvres").mkdir(parents=True, exist_ok=True)
         (self.docs_dir / "en" / "collection").mkdir(parents=True, exist_ok=True)
         (self.docs_dir / "en" / "artworks").mkdir(parents=True, exist_ok=True)
+        (self.docs_dir / "fr" / "presse").mkdir(parents=True, exist_ok=True)
+        (self.docs_dir / "en" / "press").mkdir(parents=True, exist_ok=True)
 
         self._copy_tree(ASSETS_DIR, self.docs_dir / "assets")
         self._copy_tree(IMAGES_DIR, self.docs_dir / "images")
+        self._copy_tree(DOCUMENTS_DIR, self.docs_dir / "documents")
 
         root_index = self.env.get_template("root_index_template.html")
         (self.docs_dir / "index.html").write_text(
@@ -165,7 +215,10 @@ class SiteGenerator:
         for lang in SUPPORTED_LANGS:
             ui = PUBLIC_UI[lang]
             other_lang = "en" if lang == "fr" else "fr"
+            press_folder_name = "presse" if lang == "fr" else "press"
+            other_press_folder_name = "press" if lang == "fr" else "presse"
             views = self._make_artwork_views(artworks, lang, public_base_url)
+            press_views = self._make_press_article_views(press_articles, lang)
             gallery_json = [self._gallery_item_json(view) for view in views]
             announcement_payloads = [
                 self._announcement_payload(announcement, lang)
@@ -174,6 +227,7 @@ class SiteGenerator:
             home_template = self.env.get_template("home_template.html")
             gallery_template = self.env.get_template("gallery_template.html")
             artwork_template = self.env.get_template("artwork_template.html")
+            press_template = self.env.get_template("press_template.html")
 
             home_html = home_template.render(
                 lang=lang,
@@ -184,6 +238,7 @@ class SiteGenerator:
                 theme=theme_info,
                 body_class=theme_info["body_class"],
                 collection_href="collection/index.html",
+                press_href=f"{press_folder_name}/index.html",
                 lang_switch_href=f"../{other_lang}/index.html",
                 patricia_image="../"
                 + config.home.image.replace("\\", "/").lstrip("./"),
@@ -205,11 +260,30 @@ class SiteGenerator:
                 body_class=theme_info["body_class"],
                 home_href="../index.html",
                 collection_href="index.html",
+                press_href=f"../{press_folder_name}/index.html",
                 lang_switch_href=f"../../{other_lang}/collection/index.html",
                 gallery_items=gallery_json,
                 announcements=announcement_payloads,
             )
             (gallery_folder / "index.html").write_text(gallery_html, encoding="utf-8")
+
+            press_folder = self.docs_dir / lang / press_folder_name
+            press_html = press_template.render(
+                lang=lang,
+                ui=ui,
+                site_title=config.site_title,
+                site_email=config.email,
+                goatcounter_url=config.goatcounter_url,
+                theme=theme_info,
+                body_class=theme_info["body_class"],
+                home_href="../index.html",
+                collection_href="../collection/index.html",
+                press_href="index.html",
+                lang_switch_href=f"../../{other_lang}/{other_press_folder_name}/index.html",
+                articles=press_views,
+                announcements=announcement_payloads,
+            )
+            (press_folder / "index.html").write_text(press_html, encoding="utf-8")
 
             artwork_folder = (
                 self.docs_dir / lang / ("oeuvres" if lang == "fr" else "artworks")
@@ -226,6 +300,7 @@ class SiteGenerator:
                     artwork=view,
                     home_href=view.home_path,
                     collection_href=view.gallery_path,
+                    press_href=f"../{press_folder_name}/index.html",
                     lang_switch_href=view.lang_switch_path,
                     announcements=announcement_payloads,
                 )
@@ -267,6 +342,12 @@ class SiteGenerator:
                 )
             )
         return views
+
+    @staticmethod
+    def _make_press_article_views(
+        articles: list[PressArticle], lang: str
+    ) -> list[PressArticleView]:
+        return [PressArticleView(raw=article, lang=lang) for article in articles]
 
     @staticmethod
     def _announcement_payload(announcement: Announcement, lang: str) -> dict[str, Any]:

@@ -259,6 +259,53 @@ class SiteConfig:
 
 
 @dataclass
+class PressArticle:
+    id: str
+    title: LocalizedText = field(default_factory=LocalizedText)
+    newspaper: str = ""
+    date: str = ""
+    pdf: str = ""
+    url: str = ""
+    note: LocalizedText = field(default_factory=LocalizedText)
+    extra: dict[str, Any] = field(default_factory=dict)
+
+    @classmethod
+    def from_dict(cls, data: dict[str, Any]) -> "PressArticle":
+        return cls(
+            id=str(data.get("id", "") or "").strip(),
+            title=LocalizedText.from_raw(data.get("title")),
+            newspaper=str(data.get("newspaper", "") or "").strip(),
+            date=str(data.get("date", "") or "").strip(),
+            pdf=str(data.get("pdf", "") or "").replace("\\", "/").strip(),
+            url=str(data.get("url", "") or "").strip(),
+            note=LocalizedText.from_raw(data.get("note")),
+            extra=(
+                dict(data.get("extra", {}))
+                if isinstance(data.get("extra", {}), dict)
+                else {}
+            ),
+        )
+
+    def to_dict(self) -> dict[str, Any]:
+        return {
+            "id": self.id,
+            "title": self.title.to_dict(),
+            "newspaper": self.newspaper,
+            "date": self.date,
+            "pdf": self.pdf,
+            "url": self.url,
+            "note": self.note.to_dict(),
+            "extra": self.extra,
+        }
+
+    def title_for(self, lang: str) -> str:
+        return self.title.get(lang) or self.id
+
+    def note_for(self, lang: str) -> str:
+        return self.note.get(lang)
+
+
+@dataclass
 class Artwork:
     id: str
     title: LocalizedText = field(default_factory=LocalizedText)

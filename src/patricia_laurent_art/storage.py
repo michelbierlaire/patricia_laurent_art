@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-from .models import Artwork, SiteConfig
+from .models import Artwork, SiteConfig, PressArticle
 from .settings import DATA_DIR
 
 
@@ -12,6 +12,7 @@ class Storage:
         self.data_dir = data_dir or DATA_DIR
         self.artworks_path = self.data_dir / "oeuvres.json"
         self.site_config_path = self.data_dir / "site_config.json"
+        self.press_path = self.data_dir / "press.json"
 
     def load_artworks(self) -> list[Artwork]:
         if not self.artworks_path.exists():
@@ -48,5 +49,27 @@ class Storage:
         self.data_dir.mkdir(parents=True, exist_ok=True)
         self.site_config_path.write_text(
             json.dumps(config.to_dict(), ensure_ascii=False, indent=2) + "\n",
+            encoding="utf-8",
+        )
+
+    def load_press_articles(self) -> list[PressArticle]:
+        if not self.press_path.exists():
+            return []
+
+        raw = json.loads(self.press_path.read_text(encoding="utf-8"))
+
+        if not isinstance(raw, list):
+            raise ValueError("press.json must contain a list.")
+
+        articles = [
+            PressArticle.from_dict(item) for item in raw if isinstance(item, dict)
+        ]
+        return articles
+
+    def save_press_articles(self, articles: list[PressArticle]) -> None:
+        self.data_dir.mkdir(parents=True, exist_ok=True)
+        data = [article.to_dict() for article in articles]
+        self.press_path.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2) + "\n",
             encoding="utf-8",
         )

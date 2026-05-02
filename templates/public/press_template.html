@@ -1,0 +1,78 @@
+
+
+<!DOCTYPE html>
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ ui.press }} — {{ site_title }}</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/styles.css">
+
+    {% include 'components/analytics.html' %}
+  </head>
+  <body class="{{ body_class }} press-page">
+    {% include 'components/header.html' %}
+    {% include 'components/announcements.html' %}
+
+    <main class="py-5">
+      <div class="container">
+        <div class="page-intro mb-5">
+          <p class="eyebrow mb-2">{{ site_title }}</p>
+          <h1 class="page-title mb-3">{{ ui.press }}</h1>
+        </div>
+
+        {% if articles %}
+        <div class="press-list row g-4">
+          {% for article in articles %}
+          <article class="col-12">
+            <div class="press-card p-4 p-md-5 h-100">
+              <h2 class="section-title press-title mb-3">{{ article.title }}</h2>
+
+              <p class="press-meta mb-3">
+                {% if article.newspaper %}
+                <span>{{ article.newspaper }}</span>
+                {% endif %}
+                {% if article.date %}
+                <span>{% if article.newspaper %} · {% endif %}{{ article.date }}</span>
+                {% endif %}
+              </p>
+
+              {% if article.note %}
+              <p class="press-note mb-4">{{ article.note }}</p>
+              {% endif %}
+
+              <div class="press-actions d-flex flex-wrap gap-2">
+                {% if article.pdf %}
+                <a href="{{ article.pdf }}" class="announcement-btn" target="_blank" rel="noopener noreferrer">
+                  {{ ui.read_pdf }}
+                </a>
+                {% endif %}
+
+                {% if article.url %}
+                <a href="{{ article.url }}" class="announcement-btn" target="_blank" rel="noopener noreferrer">
+                  {{ ui.read_online }}
+                </a>
+                {% endif %}
+              </div>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+        {% else %}
+        <p class="text-muted">{{ ui.press }}</p>
+        {% endif %}
+      </div>
+    </main>
+
+    <footer class="site-footer py-4">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>{{ ui.footer_text }}</span>
+        {% if site_email %}
+        <a href="mailto:{{ site_email }}">{{ site_email }}</a>
+        {% endif %}
+      </div>
+    </footer>
+  </body>
+</html>

@@ -3,7 +3,14 @@ from __future__ import annotations
 from dataclasses import replace
 from typing import Iterable
 
-from .models import Announcement, Artwork, LocalizedList, LocalizedText, SiteConfig
+from .models import (
+    Announcement,
+    Artwork,
+    LocalizedList,
+    LocalizedText,
+    PressArticle,
+    SiteConfig,
+)
 from .storage import Storage
 
 
@@ -29,7 +36,9 @@ class ContentManager:
     def add_artwork(self, artwork: Artwork) -> None:
         artworks = self.get_artworks()
         if any(existing.id == artwork.id for existing in artworks):
-            raise ValueError(f"Une œuvre avec l'identifiant '{artwork.id}' existe déjà.")
+            raise ValueError(
+                f"Une œuvre avec l'identifiant '{artwork.id}' existe déjà."
+            )
         artworks.append(artwork)
         self.save_artworks(artworks)
 
@@ -46,7 +55,9 @@ class ContentManager:
         self.save_artworks(artworks)
 
     def delete_artwork(self, artwork_id: str) -> None:
-        artworks = [artwork for artwork in self.get_artworks() if artwork.id != artwork_id]
+        artworks = [
+            artwork for artwork in self.get_artworks() if artwork.id != artwork_id
+        ]
         self.save_artworks(artworks)
 
     def duplicate_artwork(self, artwork_id: str) -> Artwork:
@@ -77,6 +88,15 @@ class ContentManager:
         config.announcements = announcements
         self.save_site_config(config)
 
+    def get_press_articles(self) -> list[PressArticle]:
+        articles = self.storage.load_press_articles()
+        articles.sort(key=lambda article: article.date, reverse=True)
+        return articles
+
+    def save_press_articles(self, articles: list[PressArticle]) -> None:
+        self._validate_unique_press_ids(articles)
+        self.storage.save_press_articles(articles)
+
     def create_empty_artwork(self, artwork_id: str) -> Artwork:
         return Artwork(
             id=artwork_id,
@@ -101,6 +121,17 @@ class ContentManager:
             raise ValueError("Chaque œuvre doit avoir un identifiant non vide.")
         if len(set(ids)) != len(ids):
             raise ValueError("Les identifiants des œuvres doivent être uniques.")
+
+    def _validate_unique_press_ids(self, articles: list[PressArticle]) -> None:
+        ids = [article.id for article in articles]
+        if any(not article_id for article_id in ids):
+            raise ValueError(
+                "Chaque article de presse doit avoir un identifiant non vide."
+            )
+        if len(set(ids)) != len(ids):
+            raise ValueError(
+                "Les identifiants des articles de presse doivent être uniques."
+            )
 
     def _generate_copy_id(self, base_id: str) -> str:
         artworks = self.get_artworks()
