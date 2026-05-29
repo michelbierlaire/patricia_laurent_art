@@ -13,5 +13,20 @@
       "fr": "Article publié à l’occasion de l’exposition à Orbe.",
       "en": "Article published on the occasion of the exhibition in Orbe."
     }
+  },
+  {
+    "id": "omnibus-2026",
+    "title": {
+      "fr": "La beauté, la sculpture, la couleur",
+      "en": "Beauty, Sculpture, and Color"
+    },
+    "newspaper": "Omnibus",
+    "date": "2026-05-08",
+    "pdf": "documents/omnibus_05_2026.pdf",
+    "url": "",
+    "note": {
+      "fr": "Article publié à l’occasion de l’exposition à Orbe.",
+      "en": "Article published on the occasion of the exhibition in Orbe."
+    }
   }
 ]
