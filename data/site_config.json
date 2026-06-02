@@ -37,10 +37,10 @@
   {
     "id": "expo-orbe-2026",
     "text": {
-      "fr": "Exposition à l’Espace Culturel Hessel, Orbe — du 1er au 31 mai 2026. Vernissage le 1er mai de 16h à 20h.",
-      "en": "Exhibition at Espace Culturel Hessel, Orbe — May 1–31, 2026. Opening reception on May 1 from 4:00 to 8:00 PM."
+      "fr": "Exposition à l’Espace Culturel Hessel, Orbe — du 1er au 7 juin 2026. Finissage le 5 juin de 18h à 20h.",
+      "en": "Exhibition at Espace Culturel Hessel, Orbe — May 1-June 7, 2026. Closing reception on June 5 from 6:00 to 8:00 PM."
     },
-    "expiration": "2026-05-31",
+    "expiration": "2026-06-31",
     "links": [
       {
         "url": "https://maps.app.goo.gl/4pe8GDkJnv9z4YDY9",
@@ -57,7 +57,7 @@
         }
       },
       {
-        "url": "/assets/calendar/vernissage.ics",
+        "url": "/assets/calendar/finissage.ics",
         "label": {
           "fr": "Télécharger (.ics)",
           "en": "Download (.ics)"
